@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0A1C7596CC00741D83 /* AppDelegate.swift */; };
+		892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0C1C7596CC00741D83 /* ViewController.swift */; };
+		892D4F101C7596CC00741D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F0E1C7596CC00741D83 /* Main.storyboard */; };
+		892D4F121C7596CC00741D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F111C7596CC00741D83 /* Assets.xcassets */; };
+		892D4F151C7596CC00741D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */; };
+		892D4F201C7596CC00741D83 /* WakaQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F1F1C7596CC00741D83 /* WakaQuizTests.swift */; };
+		892D4F2B1C7596CC00741D83 /* WakaQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F2A1C7596CC00741D83 /* WakaQuizUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		892D4F1C1C7596CC00741D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892D4EFF1C7596CC00741D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 892D4F061C7596CC00741D83;
+			remoteInfo = WakaQuiz;
+		};
+		892D4F271C7596CC00741D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892D4EFF1C7596CC00741D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 892D4F061C7596CC00741D83;
+			remoteInfo = WakaQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		892D4F071C7596CC00741D83 /* WakaQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakaQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		892D4F0A1C7596CC00741D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		892D4F0C1C7596CC00741D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		892D4F0F1C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		892D4F111C7596CC00741D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		892D4F141C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		892D4F161C7596CC00741D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892D4F1B1C7596CC00741D83 /* WakaQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		892D4F1F1C7596CC00741D83 /* WakaQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaQuizTests.swift; sourceTree = "<group>"; };
+		892D4F211C7596CC00741D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892D4F261C7596CC00741D83 /* WakaQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		892D4F2A1C7596CC00741D83 /* WakaQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaQuizUITests.swift; sourceTree = "<group>"; };
+		892D4F2C1C7596CC00741D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		892D4F041C7596CC00741D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F181C7596CC00741D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F231C7596CC00741D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		892D4EFE1C7596CC00741D83 = {
+			isa = PBXGroup;
+			children = (
+				892D4F091C7596CC00741D83 /* WakaQuiz */,
+				892D4F1E1C7596CC00741D83 /* WakaQuizTests */,
+				892D4F291C7596CC00741D83 /* WakaQuizUITests */,
+				892D4F081C7596CC00741D83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		892D4F081C7596CC00741D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				892D4F071C7596CC00741D83 /* WakaQuiz.app */,
+				892D4F1B1C7596CC00741D83 /* WakaQuizTests.xctest */,
+				892D4F261C7596CC00741D83 /* WakaQuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		892D4F091C7596CC00741D83 /* WakaQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				892D4F0A1C7596CC00741D83 /* AppDelegate.swift */,
+				892D4F0C1C7596CC00741D83 /* ViewController.swift */,
+				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
+				892D4F111C7596CC00741D83 /* Assets.xcassets */,
+				892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */,
+				892D4F161C7596CC00741D83 /* Info.plist */,
+			);
+			path = WakaQuiz;
+			sourceTree = "<group>";
+		};
+		892D4F1E1C7596CC00741D83 /* WakaQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				892D4F1F1C7596CC00741D83 /* WakaQuizTests.swift */,
+				892D4F211C7596CC00741D83 /* Info.plist */,
+			);
+			path = WakaQuizTests;
+			sourceTree = "<group>";
+		};
+		892D4F291C7596CC00741D83 /* WakaQuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				892D4F2A1C7596CC00741D83 /* WakaQuizUITests.swift */,
+				892D4F2C1C7596CC00741D83 /* Info.plist */,
+			);
+			path = WakaQuizUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		892D4F061C7596CC00741D83 /* WakaQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892D4F2F1C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuiz" */;
+			buildPhases = (
+				892D4F031C7596CC00741D83 /* Sources */,
+				892D4F041C7596CC00741D83 /* Frameworks */,
+				892D4F051C7596CC00741D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakaQuiz;
+			productName = WakaQuiz;
+			productReference = 892D4F071C7596CC00741D83 /* WakaQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		892D4F1A1C7596CC00741D83 /* WakaQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892D4F321C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuizTests" */;
+			buildPhases = (
+				892D4F171C7596CC00741D83 /* Sources */,
+				892D4F181C7596CC00741D83 /* Frameworks */,
+				892D4F191C7596CC00741D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				892D4F1D1C7596CC00741D83 /* PBXTargetDependency */,
+			);
+			name = WakaQuizTests;
+			productName = WakaQuizTests;
+			productReference = 892D4F1B1C7596CC00741D83 /* WakaQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		892D4F251C7596CC00741D83 /* WakaQuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892D4F351C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuizUITests" */;
+			buildPhases = (
+				892D4F221C7596CC00741D83 /* Sources */,
+				892D4F231C7596CC00741D83 /* Frameworks */,
+				892D4F241C7596CC00741D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				892D4F281C7596CC00741D83 /* PBXTargetDependency */,
+			);
+			name = WakaQuizUITests;
+			productName = WakaQuizUITests;
+			productReference = 892D4F261C7596CC00741D83 /* WakaQuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		892D4EFF1C7596CC00741D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = UnivercityofTsukuba;
+				TargetAttributes = {
+					892D4F061C7596CC00741D83 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					892D4F1A1C7596CC00741D83 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 892D4F061C7596CC00741D83;
+					};
+					892D4F251C7596CC00741D83 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 892D4F061C7596CC00741D83;
+					};
+				};
+			};
+			buildConfigurationList = 892D4F021C7596CC00741D83 /* Build configuration list for PBXProject "WakaQuiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 892D4EFE1C7596CC00741D83;
+			productRefGroup = 892D4F081C7596CC00741D83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				892D4F061C7596CC00741D83 /* WakaQuiz */,
+				892D4F1A1C7596CC00741D83 /* WakaQuizTests */,
+				892D4F251C7596CC00741D83 /* WakaQuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		892D4F051C7596CC00741D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892D4F151C7596CC00741D83 /* LaunchScreen.storyboard in Resources */,
+				892D4F121C7596CC00741D83 /* Assets.xcassets in Resources */,
+				892D4F101C7596CC00741D83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F191C7596CC00741D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F241C7596CC00741D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		892D4F031C7596CC00741D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */,
+				892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F171C7596CC00741D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892D4F201C7596CC00741D83 /* WakaQuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892D4F221C7596CC00741D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892D4F2B1C7596CC00741D83 /* WakaQuizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		892D4F1D1C7596CC00741D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 892D4F061C7596CC00741D83 /* WakaQuiz */;
+			targetProxy = 892D4F1C1C7596CC00741D83 /* PBXContainerItemProxy */;
+		};
+		892D4F281C7596CC00741D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 892D4F061C7596CC00741D83 /* WakaQuiz */;
+			targetProxy = 892D4F271C7596CC00741D83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		892D4F0E1C7596CC00741D83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892D4F0F1C7596CC00741D83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892D4F141C7596CC00741D83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		892D4F2D1C7596CC00741D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		892D4F2E1C7596CC00741D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		892D4F301C7596CC00741D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakaQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		892D4F311C7596CC00741D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakaQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		892D4F331C7596CC00741D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WakaQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakaQuiz.app/WakaQuiz";
+			};
+			name = Debug;
+		};
+		892D4F341C7596CC00741D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WakaQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakaQuiz.app/WakaQuiz";
+			};
+			name = Release;
+		};
+		892D4F361C7596CC00741D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WakaQuizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WakaQuiz;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		892D4F371C7596CC00741D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WakaQuizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WakaQuiz;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		892D4F021C7596CC00741D83 /* Build configuration list for PBXProject "WakaQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892D4F2D1C7596CC00741D83 /* Debug */,
+				892D4F2E1C7596CC00741D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892D4F2F1C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892D4F301C7596CC00741D83 /* Debug */,
+				892D4F311C7596CC00741D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		892D4F321C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892D4F331C7596CC00741D83 /* Debug */,
+				892D4F341C7596CC00741D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		892D4F351C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892D4F361C7596CC00741D83 /* Debug */,
+				892D4F371C7596CC00741D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 892D4EFF1C7596CC00741D83 /* Project object */;
+}

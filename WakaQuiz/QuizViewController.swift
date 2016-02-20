@@ -123,33 +123,34 @@ class QuizViewController: UIViewController {
         
         //<--------     背景をランダムに設定　　---------->
         rnd = Int(arc4random_uniform(54))
-        haikeiImage.image = haikeiImgArray[rnd]
+        rndHaikei()
         
         
         //<------------   問題をランダムに設定   ------------->
         //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
         questionRnd = Int(arc4random_uniform(10))
-        questionTextView.text = questionArray[Int(questionRnd)]
+        rndQuestion()
         
         
         //<-------- 正解を表示する場所の決定  ------>
-        selectAnswerRnd = Int(arc4random_uniform(3))
-        
+         selectAnswerRnd = Int(arc4random_uniform(3))
+
         
         //<-------- ダミーの答えのインデックス  ------>
         //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
-        dummyAnswerRnd1 = Int(arc4random_uniform(10))
-        //正解を一つにする。
-        while(dummyAnswerRnd1 == questionRnd){
+            dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            //正解を一つにする。
+            while(dummyAnswerRnd1 == questionRnd){
                 dummyAnswerRnd1 = Int(arc4random_uniform(10))
-        }
-        dummyAnswerRnd2 = Int(arc4random_uniform(10))
-        while(dummyAnswerRnd2 == questionRnd){
-            dummyAnswerRnd1 = Int(arc4random_uniform(10))
-        }
-        while(dummyAnswerRnd2 == dummyAnswerRnd1){
-            dummyAnswerRnd1 = Int(arc4random_uniform(10))
-        }
+            }
+            dummyAnswerRnd2 = Int(arc4random_uniform(10))
+            while(dummyAnswerRnd2 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            while(dummyAnswerRnd2 == dummyAnswerRnd1){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+        
         
         //<--------  選択肢の設定  ---------->
         if(selectAnswerRnd == 0){
@@ -177,7 +178,41 @@ class QuizViewController: UIViewController {
         if(countQuestion == questionMax){
             performSegueToResult()
         }else{
-            
+            rnd = Int(arc4random_uniform(54))
+            rndHaikei()
+
+            questionRnd = Int(arc4random_uniform(10))
+            rndQuestion()
+
+            selectAnswerRnd = Int(arc4random_uniform(3))
+
+            dummyAnswerRnd1 = Int(arc4random_uniform(10))
+
+            while(dummyAnswerRnd1 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            dummyAnswerRnd2 = Int(arc4random_uniform(10))
+            while(dummyAnswerRnd2 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            while(dummyAnswerRnd2 == dummyAnswerRnd1){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+
+            if(selectAnswerRnd == 0){
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else if(selectAnswerRnd == 1){
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else{ //selectAnswerRnd == 2
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }
+
         }
     }
 
@@ -189,7 +224,40 @@ class QuizViewController: UIViewController {
         if(countQuestion == questionMax){
                 performSegueToResult()
         }else{
+            rnd = Int(arc4random_uniform(54))
+            rndHaikei()
             
+            questionRnd = Int(arc4random_uniform(10))
+            rndQuestion()
+            
+            selectAnswerRnd = Int(arc4random_uniform(3))
+            
+            dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            
+            while(dummyAnswerRnd1 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            dummyAnswerRnd2 = Int(arc4random_uniform(10))
+            while(dummyAnswerRnd2 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            while(dummyAnswerRnd2 == dummyAnswerRnd1){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            
+            if(selectAnswerRnd == 0){
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else if(selectAnswerRnd == 1){
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else{ //selectAnswerRnd == 2
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }
         }
     }
     
@@ -201,14 +269,101 @@ class QuizViewController: UIViewController {
         if(countQuestion == questionMax){
             performSegueToResult()
         }else{
+            rnd = Int(arc4random_uniform(54))
+            rndHaikei()
             
+            questionRnd = Int(arc4random_uniform(10))
+            rndQuestion()
+            
+            selectAnswerRnd = Int(arc4random_uniform(3))
+            
+            dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            
+            while(dummyAnswerRnd1 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            dummyAnswerRnd2 = Int(arc4random_uniform(10))
+            while(dummyAnswerRnd2 == questionRnd){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            while(dummyAnswerRnd2 == dummyAnswerRnd1){
+                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+            }
+            
+            if(selectAnswerRnd == 0){
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else if(selectAnswerRnd == 1){
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }else{ //selectAnswerRnd == 2
+                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            }
         }
     }
     
     func performSegueToResult() {
-    performSegueWithIdentifier("toResultViewController", sender: nil)
+        performSegueWithIdentifier("toResultViewController", sender: nil)
     }
     
+    //<--------     背景をランダムに設定する関数　　---------->
+    func rndHaikei(){
+        haikeiImage.image = haikeiImgArray[rnd]
+    }
+    
+    //<------------   問題をランダムに設定する関数   ------------->
+    //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
+    func rndQuestion() {
+        questionTextView.text = questionArray[Int(questionRnd)]
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "toResultViewController") {
+            let resultView = segue.destinationViewController as! ResultViewController
+            resultView.countAnswer = self.countAnswer
+            resultView.questionMax = self.questionMax
+        }
+    }
+    
+//    
+//    //<-------- ダミーの答えのインデックスを決める関数  ------>
+//    //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
+//    func decideAnswerIndex(){
+//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
+//    //正解を一つにする。
+//    while(dummyAnswerRnd1 == questionRnd){
+//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
+//    }
+//    dummyAnswerRnd2 = Int(arc4random_uniform(10))
+//    while(dummyAnswerRnd2 == questionRnd){
+//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
+//    }
+//    while(dummyAnswerRnd2 == dummyAnswerRnd1){
+//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
+//    }
+//    }
+//    
+//    
+//    //<--------  選択肢を設定する関数  ---------->
+//    func setAnswers(){
+//    if(selectAnswerRnd == 0){
+//    answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+//    answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+//    }else if(selectAnswerRnd == 1){
+//    answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+//    answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+//    }else{ //selectAnswerRnd == 2
+//    answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+//    answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+//    }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

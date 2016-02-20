@@ -66,7 +66,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1o-hd-N1k">
                                 <rect key="frame" x="25" y="292" width="96" height="346"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="answerButton1Pressed:" destination="vPQ-Um-e2P" eventType="touchUpInside" id="G5f-Ve-PJW"/>
                                 </connections>
@@ -74,7 +73,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avD-oc-cjA">
                                 <rect key="frame" x="247" y="292" width="96" height="346"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="answerButton3Pressed:" destination="vPQ-Um-e2P" eventType="touchUpInside" id="q3x-RT-AOk"/>
                                 </connections>
@@ -82,7 +80,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-EM-IG5">
                                 <rect key="frame" x="139" y="292" width="96" height="346"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="answerButton2Pressed:" destination="vPQ-Um-e2P" eventType="touchUpInside" id="eYF-K7-Is5"/>
                                 </connections>
@@ -219,6 +216,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="haikeiLabel" destination="rwc-ef-SPH" id="8sC-kO-fsn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT3-xq-TA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

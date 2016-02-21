@@ -25,8 +25,9 @@ class QuizViewController: UIViewController {
     var countAnswer:Int = 0 //正解の数を記憶
    
     //背景の画像をランダム表示
-    var haikeiImgArray:[UIImage] = [UIImage(named: "001.jpg")!,
-                                    UIImage(named: "002.jpg")!,
+    var haikeiImgArray:[UIImage] = [
+        UIImage(named: "001.jpg")!,
+        UIImage(named: "002.jpg")!,
         UIImage(named: "003.jpg")!,
         UIImage(named: "004.jpg")!,
         UIImage(named: "005.jpg")!,
@@ -84,7 +85,8 @@ class QuizViewController: UIViewController {
    
     //問題の配列
     //！！問題がかぶることが考慮されていない！！
-    var questionArray:[String] = ["秋の田んぼの世話をするための仮の小屋は屋根の編み目が荒く、私の袖が夜露に濡れてしまっていることよ。\n",
+    var questionArray:[String] = [
+        "秋の田んぼの世話をするための仮の小屋は屋根の編み目が荒く、私の袖が夜露に濡れてしまっていることよ。\n",
         "天の香具山に白い衣装が干してある。夏が来たようだ。\n",
         "長い長い夜を愛する人と離れ離れになって一人寂しく寝るのだろうなあ。\n",
         "田子の浦から遠くを眺めると藤の峰に真っ白な雪が降り積もっているなあ。\n",
@@ -93,13 +95,56 @@ class QuizViewController: UIViewController {
         "大空を見上げてみると、月がとても美しいことよ。故郷の三笠山にかかっている月でもあるのだなあ。\n",
         "私が住んでいる家は静かなところにあるので落ち着く。しかし皆さんは私が人付き合いが煩わしいと思ってこの場所に住んでいると思っているみたいですね。\n",
         "花が色あせるように私の美しさも衰えてしまったわ。恋愛なんかの悩みに、長雨を眺めながら思いを馳せているうちに。\n",
-        "京の都から東国へ行く人も東国から都へ帰る人もこの場所で会って別れていることだ。\n"
+        "京の都から東国へ行く人も東国から都へ帰る人もこの場所で会って別れていることだ。\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
     ]
     
     var questionRnd: Int = 0
     
     //答えの配列
-    var answerArray:[UIImage] = [UIImage(named:"u001.jpg")!,
+    var answerArray:[UIImage] = [
+         UIImage(named:"u001.jpg")!,
          UIImage(named:"u002.jpg")!,
          UIImage(named:"u003.jpg")!,
          UIImage(named:"u004.jpg")!,
@@ -120,6 +165,9 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        countAnswer = 0
+        countQuestion = 0
         
         //<--------     背景をランダムに設定　　---------->
         rnd = Int(arc4random_uniform(54))
@@ -145,10 +193,10 @@ class QuizViewController: UIViewController {
             }
             dummyAnswerRnd2 = Int(arc4random_uniform(10))
             while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
             while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
         
         
@@ -162,9 +210,9 @@ class QuizViewController: UIViewController {
             answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
             answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
         }else{ //selectAnswerRnd == 2
-            answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-            answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-            answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+            answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
         }
         
     }
@@ -193,10 +241,10 @@ class QuizViewController: UIViewController {
             }
             dummyAnswerRnd2 = Int(arc4random_uniform(10))
             while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
             while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
 
             if(selectAnswerRnd == 0){
@@ -208,9 +256,9 @@ class QuizViewController: UIViewController {
                 answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
                 answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
             }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
             }
 
         }
@@ -254,9 +302,9 @@ class QuizViewController: UIViewController {
                 answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
                 answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
             }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
             }
         }
     }
@@ -284,10 +332,10 @@ class QuizViewController: UIViewController {
             }
             dummyAnswerRnd2 = Int(arc4random_uniform(10))
             while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
             while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
+                dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
             
             if(selectAnswerRnd == 0){
@@ -299,9 +347,9 @@ class QuizViewController: UIViewController {
                 answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
                 answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
             }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
+                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
             }
         }
     }
@@ -328,42 +376,6 @@ class QuizViewController: UIViewController {
             resultView.questionMax = self.questionMax
         }
     }
-    
-//    
-//    //<-------- ダミーの答えのインデックスを決める関数  ------>
-//    //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
-//    func decideAnswerIndex(){
-//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
-//    //正解を一つにする。
-//    while(dummyAnswerRnd1 == questionRnd){
-//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
-//    }
-//    dummyAnswerRnd2 = Int(arc4random_uniform(10))
-//    while(dummyAnswerRnd2 == questionRnd){
-//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
-//    }
-//    while(dummyAnswerRnd2 == dummyAnswerRnd1){
-//    dummyAnswerRnd1 = Int(arc4random_uniform(10))
-//    }
-//    }
-//    
-//    
-//    //<--------  選択肢を設定する関数  ---------->
-//    func setAnswers(){
-//    if(selectAnswerRnd == 0){
-//    answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-//    answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-//    }else if(selectAnswerRnd == 1){
-//    answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-//    answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-//    }else{ //selectAnswerRnd == 2
-//    answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-//    answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-//    answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-//    }
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

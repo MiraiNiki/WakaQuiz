@@ -10,6 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var haikeiLabel: UIImageView!
     var countAnswer: Int = 0
     var questionMax: Int = 0
@@ -21,6 +22,9 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resultLabel.text = String(countAnswer) + "/" + String(questionMax)
+
+        
         if(countAnswer <= questionMax/3){
             haikeiLabel.image = haikeiImg1
         }else if(countAnswer <= 2*questionMax/3){
@@ -31,6 +35,8 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

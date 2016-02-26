@@ -22,7 +22,7 @@ class QuizViewController: UIViewController {
     
     let questionMax = 5 //全部で5問出す装置だと仮定。
     var countQuestion:Int = 0 //出題数を記憶
-    var countAnswer:Int = 0 //正解の数を記憶
+    var ifAnswer:Bool = true //正解の数を記憶
    
     //背景の画像をランダム表示
     var haikeiImgArray:[UIImage] = [
@@ -256,7 +256,7 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        countAnswer = 0
+        ifAnswer = false
         countQuestion = 0
         
         //<--------     背景をランダムに設定　　---------->
@@ -310,138 +310,23 @@ class QuizViewController: UIViewController {
     //<----- 正解の数と出題数の処理 ------>
     @IBAction func answerButton1Pressed(sender: AnyObject) {
         if(selectAnswerRnd == 0){
-            countAnswer++;
+            ifAnswer = true
         }
-        countQuestion++;
-        if(countQuestion == questionMax){
-            performSegueToResult()
-        }else{
-            rnd = Int(arc4random_uniform(54))
-            rndHaikei()
-
-            questionRnd = Int(arc4random_uniform(10))
-            rndQuestion()
-
-            selectAnswerRnd = Int(arc4random_uniform(3))
-
-            dummyAnswerRnd1 = Int(arc4random_uniform(10))
-
-            while(dummyAnswerRnd1 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            }
-            dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            }
-            while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            }
-
-            if(selectAnswerRnd == 0){
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else if(selectAnswerRnd == 1){
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-            }
-
-        }
+        performSegueToResult()
     }
 
     @IBAction func answerButton2Pressed(sender: AnyObject) {
         if(selectAnswerRnd == 1){
-            countAnswer++;
+            ifAnswer = true
         }
-        countQuestion++;
-        if(countQuestion == questionMax){
-                performSegueToResult()
-        }else{
-            rnd = Int(arc4random_uniform(54))
-            rndHaikei()
-            
-            questionRnd = Int(arc4random_uniform(10))
-            rndQuestion()
-            
-            selectAnswerRnd = Int(arc4random_uniform(3))
-            
-            dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            
-            while(dummyAnswerRnd1 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            }
-            dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            }
-            while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            }
-            
-            if(selectAnswerRnd == 0){
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else if(selectAnswerRnd == 1){
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-            }
-        }
+        performSegueToResult()
     }
     
     @IBAction func answerButton3Pressed(sender: AnyObject) {
         if(selectAnswerRnd == 2){
-            countAnswer++;
+            ifAnswer = true
         }
-        countQuestion++;
-        if(countQuestion == questionMax){
-            performSegueToResult()
-        }else{
-            rnd = Int(arc4random_uniform(54))
-            rndHaikei()
-            
-            questionRnd = Int(arc4random_uniform(10))
-            rndQuestion()
-            
-            selectAnswerRnd = Int(arc4random_uniform(3))
-            
-            dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            
-            while(dummyAnswerRnd1 == questionRnd){
-                dummyAnswerRnd1 = Int(arc4random_uniform(10))
-            }
-            dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            }
-            while(dummyAnswerRnd2 == dummyAnswerRnd1){
-                dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            }
-            
-            if(selectAnswerRnd == 0){
-                answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else if(selectAnswerRnd == 1){
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            }else{ //selectAnswerRnd == 2
-                answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-                answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-                answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-            }
-        }
+        performSegueToResult()
     }
     
     func performSegueToResult() {
@@ -462,8 +347,7 @@ class QuizViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "toResultViewController") {
             let resultView = segue.destinationViewController as! ResultViewController
-            resultView.countAnswer = self.countAnswer
-            resultView.questionMax = self.questionMax
+            resultView.ifAnswer = self.ifAnswer
         }
     }
     

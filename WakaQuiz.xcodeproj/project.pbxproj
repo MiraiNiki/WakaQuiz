@@ -110,6 +110,8 @@
 		890C90181C79947C0023AE5F /* u099.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C8FB41C79947C0023AE5F /* u099.jpg */; };
 		890C90191C79947C0023AE5F /* u100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C8FB51C79947C0023AE5F /* u100.jpg */; };
 		890C901C1C7A01060023AE5F /* u093.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C901B1C7A01060023AE5F /* u093.jpg */; };
+		890C907E1C7FCDCD0023AE5F /* WakaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */; };
+		890C907F1C7FCDCD0023AE5F /* WakaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */; };
 		892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0A1C7596CC00741D83 /* AppDelegate.swift */; };
 		892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0C1C7596CC00741D83 /* ViewController.swift */; };
 		892D4F101C7596CC00741D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F0E1C7596CC00741D83 /* Main.storyboard */; };
@@ -304,6 +306,8 @@
 		890C8FB41C79947C0023AE5F /* u099.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = u099.jpg; sourceTree = "<group>"; };
 		890C8FB51C79947C0023AE5F /* u100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = u100.jpg; sourceTree = "<group>"; };
 		890C901B1C7A01060023AE5F /* u093.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = u093.jpg; sourceTree = "<group>"; };
+		890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WakaListTableViewCell.swift; path = ../WakaListTableViewCell.swift; sourceTree = "<group>"; };
+		890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WakaListTableViewCell.xib; path = ../WakaListTableViewCell.xib; sourceTree = "<group>"; };
 		892D4F071C7596CC00741D83 /* WakaQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakaQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892D4F0A1C7596CC00741D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		892D4F0C1C7596CC00741D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -555,6 +559,8 @@
 				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
 				892D4F3E1C774AC800741D83 /* DetailViewController.swift */,
 				892D4F3C1C774A3C00741D83 /* WakaListTableViewController.swift */,
+				890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */,
+				890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */,
 				892D4F381C7749B900741D83 /* QuizViewController.swift */,
 				892D4F3A1C7749FB00741D83 /* ResultViewController.swift */,
 				890C8F521C79947C0023AE5F /* wakaImage */,
@@ -855,6 +861,7 @@
 				892D4FEF1C775B1F00741D83 /* 005.jpg in Resources */,
 				890C8FFE1C79947C0023AE5F /* u072.jpg in Resources */,
 				890C8FEC1C79947C0023AE5F /* u054.jpg in Resources */,
+				890C907F1C7FCDCD0023AE5F /* WakaListTableViewCell.xib in Resources */,
 				890C8FC91C79947C0023AE5F /* u019.jpg in Resources */,
 				892D501E1C775B1F00741D83 /* 052.jpg in Resources */,
 				890C8FD81C79947C0023AE5F /* u034.jpg in Resources */,
@@ -965,6 +972,7 @@
 				892D4F391C7749B900741D83 /* QuizViewController.swift in Sources */,
 				892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */,
 				892D4F3D1C774A3C00741D83 /* WakaListTableViewController.swift in Sources */,
+				890C907E1C7FCDCD0023AE5F /* WakaListTableViewCell.swift in Sources */,
 				892D4F3F1C774AC800741D83 /* DetailViewController.swift in Sources */,
 				892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */,
 				892D4F3B1C7749FB00741D83 /* ResultViewController.swift in Sources */,

@@ -207,50 +207,69 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="result3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R93-vo-yax">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.71546155214309692" green="0.73684448003768921" blue="0.93177193403244019" alpha="0.46188766891891891" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-lq-AfG">
-                                <rect key="frame" x="10" y="10" width="77" height="54"/>
-                                <color key="backgroundColor" white="1" alpha="0.67786634290000003" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleColor" red="0.26918154954910278" green="0.25958737730979919" blue="0.91298264265060425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eeT-cG-W5G" kind="modal" modalTransitionStyle="flipHorizontal" id="YLQ-UW-bvo"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ETK-vW-7Zh">
-                                <rect key="frame" x="28" y="425" width="272" height="99"/>
+                                <rect key="frame" x="20" y="368" width="280" height="99"/>
                                 <color key="backgroundColor" red="0.99204033613204956" green="0.9924272894859314" blue="0.9956931471824646" alpha="0.68327702702702697" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-Fi-uGs">
-                                <rect key="frame" x="84" y="90" width="151" height="182"/>
+                                <rect key="frame" x="85" y="94" width="151" height="182"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-04-843">
-                                <rect key="frame" x="90" y="95" width="138" height="171"/>
+                                <rect key="frame" x="91" y="99" width="138" height="171"/>
                                 <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-B8-KL3">
-                                <rect key="frame" x="84" y="304" width="151" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-B8-KL3">
+                                <rect key="frame" x="96" y="36" width="128" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="0.54502744930000002" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOp-Va-aj6">
-                                <rect key="frame" x="40" y="362" width="240" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOp-Va-aj6">
+                                <rect key="frame" x="143" y="308" width="151" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="0.54502744930000002" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgW-oe-v3y">
+                                <rect key="frame" x="29" y="308" width="81" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="0.54502744930000002" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNd-AE-rsc">
+                                <rect key="frame" x="15" y="494" width="131" height="54"/>
+                                <color key="backgroundColor" red="0.8021729588508606" green="0.7667655348777771" blue="0.94566017389297485" alpha="0.62959248310810811" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Topへ戻る">
+                                    <color key="titleColor" red="0.26918154954910278" green="0.25958737730979919" blue="0.91298264265060425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="RNM-kU-65c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-lq-AfG">
+                                <rect key="frame" x="165" y="494" width="140" height="54"/>
+                                <color key="backgroundColor" red="0.9410671591758728" green="0.88871115446090698" blue="0.74401247501373291" alpha="0.75335198479729726" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="一覧へ戻る">
+                                    <color key="titleColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eeT-cG-W5G" kind="modal" modalTransitionStyle="flipHorizontal" id="YLQ-UW-bvo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -367,7 +386,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YLQ-UW-bvo"/>
-        <segue reference="qgo-IK-6L4"/>
+        <segue reference="RNM-kU-65c"/>
         <segue reference="8Bi-u8-FOa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WakaQuiz/QuizViewController.swift"
-            timestampString = "477756621.969956"
+            timestampString = "478175769.677452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>

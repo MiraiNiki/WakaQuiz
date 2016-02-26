@@ -21,7 +21,6 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton3: UIButton!
     
     let questionMax = 5 //全部で5問出す装置だと仮定。
-    var countQuestion:Int = 0 //出題数を記憶
     var ifAnswer:Bool = true //正解の数を記憶
    
     //背景の画像をランダム表示
@@ -257,7 +256,6 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         ifAnswer = false
-        countQuestion = 0
         
         //<--------     背景をランダムに設定　　---------->
         rnd = Int(arc4random_uniform(54))
@@ -348,6 +346,7 @@ class QuizViewController: UIViewController {
         if (segue.identifier == "toResultViewController") {
             let resultView = segue.destinationViewController as! ResultViewController
             resultView.ifAnswer = self.ifAnswer
+            resultView.questionIndex = questionRnd
         }
     }
     

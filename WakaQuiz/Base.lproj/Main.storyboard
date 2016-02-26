@@ -165,7 +165,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="Pao-sa-cfT">
-                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pao-sa-cfT" id="BhA-nl-VdY">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -180,6 +180,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="eyh-U7-BXo">
                         <barButtonItem key="leftBarButtonItem" title="戻る" id="LSe-km-Y1i">
+                            <color key="tintColor" red="0.18961447477340698" green="0.41580429673194885" blue="0.083521075546741486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="modal" id="fRO-fY-YDp"/>
                             </connections>
@@ -267,7 +268,7 @@
                                     <color key="titleColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eeT-cG-W5G" kind="modal" modalTransitionStyle="flipHorizontal" id="YLQ-UW-bvo"/>
+                                    <segue destination="MmG-Dh-nsT" kind="modal" id="6pn-Xb-LXk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -353,6 +354,7 @@
                     <connections>
                         <outlet property="haikeiLabel" destination="rwc-ef-SPH" id="8sC-kO-fsn"/>
                         <outlet property="resultLabel" destination="U9v-Oj-uhD" id="kSu-QT-vva"/>
+                        <outlet property="wakaTextView" destination="90G-u1-eOK" id="XZW-Qv-gl9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT3-xq-TA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -385,8 +387,8 @@
         <image name="result3.jpg" width="1280" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YLQ-UW-bvo"/>
-        <segue reference="RNM-kU-65c"/>
+        <segue reference="6pn-Xb-LXk"/>
+        <segue reference="qgo-IK-6L4"/>
         <segue reference="8Bi-u8-FOa"/>
     </inferredMetricsTieBreakers>
 </document>

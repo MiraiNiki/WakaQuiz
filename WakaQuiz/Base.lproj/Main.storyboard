@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vPQ-Um-e2P" kind="modal" id="3iF-iW-PVh"/>
+                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-Zi-nNp">
@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MmG-Dh-nsT" kind="modal" id="d1p-5X-bsk"/>
+                                    <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-5X-ibN">
@@ -182,7 +182,7 @@
                         <barButtonItem key="leftBarButtonItem" title="戻る" id="LSe-km-Y1i">
                             <color key="tintColor" red="0.18961447477340698" green="0.41580429673194885" blue="0.083521075546741486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="modal" id="fRO-fY-YDp"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="fRO-fY-YDp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -217,19 +217,26 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-Fi-uGs">
-                                <rect key="frame" x="85" y="94" width="151" height="182"/>
+                                <rect key="frame" x="96" y="94" width="128" height="182"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-3g-btY">
+                                <rect key="frame" x="101" y="99" width="118" height="171"/>
+                                <color key="backgroundColor" red="0.99280792474746704" green="0.99568992853164673" blue="0.99221271276473999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-04-843">
-                                <rect key="frame" x="91" y="99" width="138" height="171"/>
+                                <rect key="frame" x="107" y="110" width="107" height="152"/>
                                 <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-B8-KL3">
-                                <rect key="frame" x="96" y="36" width="128" height="38"/>
+                                <rect key="frame" x="96" y="28" width="128" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="0.54502744930000002" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -268,7 +275,7 @@
                                     <color key="titleColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MmG-Dh-nsT" kind="modal" id="6pn-Xb-LXk"/>
+                                    <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="flipHorizontal" id="6pn-Xb-LXk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -278,7 +285,7 @@
                         <outlet property="authorLabel" destination="bOp-Va-aj6" id="Qde-EO-6ch"/>
                         <outlet property="numberLabel" destination="DHF-B8-KL3" id="84D-or-rpl"/>
                         <outlet property="setsumeiTextView" destination="ETK-vW-7Zh" id="PEE-IV-iqq"/>
-                        <outlet property="wakaTextView" destination="E2B-04-843" id="SI9-ah-ezK"/>
+                        <outlet property="wakaTextView" destination="E2B-04-843" id="FBS-qF-aGN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ud1-UO-ulL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -326,7 +333,7 @@
                                     <color key="titleColor" red="0.28980216383934021" green="0.25413575768470764" blue="0.8903154730796814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="qgo-IK-6L4"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="qgo-IK-6L4"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="03N-El-bXE">
@@ -388,7 +395,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6pn-Xb-LXk"/>
-        <segue reference="qgo-IK-6L4"/>
-        <segue reference="8Bi-u8-FOa"/>
+        <segue reference="RNM-kU-65c"/>
+        <segue reference="3iF-iW-PVh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -98,8 +98,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oyJ-9d-LR3">
-                                <rect key="frame" x="20" y="28" width="283" height="161"/>
-                                <color key="backgroundColor" white="1" alpha="0.67786634290540537" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="84" width="283" height="105"/>
+                                <color key="backgroundColor" white="1" alpha="0.9296875" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -151,6 +151,13 @@
                                     <action selector="answerButton1Pressed:" destination="vPQ-Um-e2P" eventType="touchUpInside" id="G5f-Ve-PJW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="次の意味に合う和歌は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-A3-3jQ">
+                                <rect key="frame" x="20" y="28" width="283" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="0.9296875" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avD-oc-cjA">
                                 <rect key="frame" x="221" y="223" width="92" height="337"/>
                                 <connections>

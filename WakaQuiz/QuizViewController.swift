@@ -20,8 +20,13 @@ class QuizViewController: UIViewController {
     
     @IBOutlet weak var answerButton3: UIButton!
     
-    let questionMax = 5 //全部で5問出す装置だと仮定。
-    var ifAnswer:Bool = true //正解の数を記憶
+    @IBOutlet weak var answerTextView1: UITextView!
+    
+    @IBOutlet weak var answerTextView2: UITextView!
+    
+    @IBOutlet weak var answerTextView3: UITextView!
+    
+    var ifAnswer:Bool = false //正解の数を記憶
    
     //背景の画像をランダム表示
     var haikeiImgArray:[UIImage] = [
@@ -80,6 +85,7 @@ class QuizViewController: UIViewController {
         UIImage(named: "053.jpg")!,
         UIImage(named: "054.jpg")!
         ]
+    
     var rnd: Int = 0
    
     //問題の配列
@@ -142,107 +148,27 @@ class QuizViewController: UIViewController {
     var questionRnd: Int = 0
     
     //答えの配列
-    var answerArray:[UIImage] = [
-         UIImage(named:"u001.jpg")!,
-         UIImage(named:"u002.jpg")!,
-         UIImage(named:"u003.jpg")!,
-         UIImage(named:"u004.jpg")!,
-         UIImage(named:"u005.jpg")!,
-         UIImage(named:"u006.jpg")!,
-         UIImage(named:"u007.jpg")!,
-         UIImage(named:"u008.jpg")!,
-         UIImage(named:"u009.jpg")!,
-         UIImage(named:"u010.jpg")!,
-         UIImage(named:"u011.jpg")!,
-         UIImage(named:"u012.jpg")!,
-         UIImage(named:"u013.jpg")!,
-         UIImage(named:"u014.jpg")!,
-         UIImage(named:"u015.jpg")!,
-         UIImage(named:"u016.jpg")!,
-         UIImage(named:"u017.jpg")!,
-         UIImage(named:"u018.jpg")!,
-         UIImage(named:"u019.jpg")!,
-         UIImage(named:"u020.jpg")!,
-         UIImage(named:"u021.jpg")!,
-         UIImage(named:"u022.jpg")!,
-         UIImage(named:"u023.jpg")!,
-         UIImage(named:"u024.jpg")!,
-         UIImage(named:"u025.jpg")!,
-         UIImage(named:"u026.jpg")!,
-         UIImage(named:"u027.jpg")!,
-         UIImage(named:"u028.jpg")!,
-         UIImage(named:"u029.jpg")!,
-         UIImage(named:"u030.jpg")!,
-         UIImage(named:"u031.jpg")!,
-         UIImage(named:"u032.jpg")!,
-         UIImage(named:"u033.jpg")!,
-         UIImage(named:"u034.jpg")!,
-         UIImage(named:"u035.jpg")!,
-         UIImage(named:"u036.jpg")!,
-         UIImage(named:"u037.jpg")!,
-         UIImage(named:"u038.jpg")!,
-         UIImage(named:"u039.jpg")!,
-         UIImage(named:"u040.jpg")!,
-         UIImage(named:"u041.jpg")!,
-         UIImage(named:"u042.jpg")!,
-         UIImage(named:"u043.jpg")!,
-         UIImage(named:"u044.jpg")!,
-         UIImage(named:"u045.jpg")!,
-         UIImage(named:"u046.jpg")!,
-         UIImage(named:"u047.jpg")!,
-         UIImage(named:"u048.jpg")!,
-         UIImage(named:"u049.jpg")!,
-         UIImage(named:"u050.jpg")!,
-         UIImage(named:"u051.jpg")!,
-         UIImage(named:"u052.jpg")!,
-         UIImage(named:"u053.jpg")!,
-         UIImage(named:"u054.jpg")!,
-         UIImage(named:"u055.jpg")!,
-         UIImage(named:"u056.jpg")!,
-         UIImage(named:"u057.jpg")!,
-         UIImage(named:"u058.jpg")!,
-         UIImage(named:"u059.jpg")!,
-         UIImage(named:"u060.jpg")!,
-         UIImage(named:"u061.jpg")!,
-         UIImage(named:"u062.jpg")!,
-         UIImage(named:"u063.jpg")!,
-         UIImage(named:"u064.jpg")!,
-         UIImage(named:"u065.jpg")!,
-         UIImage(named:"u066.jpg")!,
-         UIImage(named:"u067.jpg")!,
-         UIImage(named:"u068.jpg")!,
-         UIImage(named:"u069.jpg")!,
-         UIImage(named:"u070.jpg")!,
-         UIImage(named:"u071.jpg")!,
-         UIImage(named:"u072.jpg")!,
-         UIImage(named:"u073.jpg")!,
-         UIImage(named:"u074.jpg")!,
-         UIImage(named:"u075.jpg")!,
-         UIImage(named:"u076.jpg")!,
-         UIImage(named:"u077.jpg")!,
-         UIImage(named:"u078.jpg")!,
-         UIImage(named:"u079.jpg")!,
-         UIImage(named:"u080.jpg")!,
-         UIImage(named:"u081.jpg")!,
-         UIImage(named:"u082.jpg")!,
-         UIImage(named:"u083.jpg")!,
-         UIImage(named:"u084.jpg")!,
-         UIImage(named:"u085.jpg")!,
-         UIImage(named:"u086.jpg")!,
-         UIImage(named:"u087.jpg")!,
-         UIImage(named:"u088.jpg")!,
-         UIImage(named:"u089.jpg")!,
-         UIImage(named:"u090.jpg")!,
-         UIImage(named:"u091.jpg")!,
-         UIImage(named:"u092.jpg")!,
-         UIImage(named:"u093.jpg")!,
-         UIImage(named:"u094.jpg")!,
-         UIImage(named:"u095.jpg")!,
-         UIImage(named:"u096.jpg")!,
-         UIImage(named:"u097.jpg")!,
-         UIImage(named:"u098.jpg")!,
-         UIImage(named:"u099.jpg")!,
-         UIImage(named:"u100.jpg")!,
+    var answerArray:[String] = [
+        "秋の田の　かりほの庵の　苫をあらみ\nわが衣手は　露にぬれつつ","春過ぎて　夏来にけらし　白妙の\n衣干すてふ　天の香具山","あしびきの　山鳥の尾の　しだり尾の\nながながし夜を　ひとりかも寝む","田子の浦に　うち出でて見れば　白妙の\n富士の高嶺に　雪は降りつつ\n","奥山に　紅葉踏み分け　鳴く鹿の\n声聞く時ぞ　秋は悲しき",
+        "鵲の　渡せる橋に　置く霜の\n白きを見れば　夜ぞ更けにける ","天の原　ふりさけ見れば　春日なる\n三笠の山に　出でし月かも","わが庵は　都の辰巳　しかぞ住む\n世をうぢ山と　人はいふなり","花の色は　移りにけりな　いたづらに\nわが身世にふる　ながめせしまに","これやこの　行くも帰るも　別れては\n知るも知らぬも　あふ坂の関",
+        "わたの原　八十島かけて　漕ぎ出でぬと\n人には告げよ　海人の釣船 ","天つ風　雲の通ひ路　吹きとぢよ\n乙女の姿　しばしとどめむ","筑波嶺の　峰より落つる　みなの川\n恋ぞ積もりて　淵となりぬる","陸奥の　しのぶもぢずり　たれゆえに\n乱れそめにし　われならなくに","君がため　春の野に出でて　若菜摘む\nわが衣手に　雪は降りつつ",
+        "立ち別れ　いなばの山の　峰に生ふる\nまつとし聞かば　今帰り来む","ちはやぶる　神代も聞かず　竜田川\nからくれなゐに　水くくるとは","住の江の　岸に寄る波　よるさへや\n夢の通ひ路　人目よくらむ","難波潟　短き蘆の　ふしの間も\n逢はでこの世を　過ぐしてよとや","わびぬれば　今はたおなじ　難波なる\nみをつくしても　逢はむとぞ思ふ",
+        "今来むと　いひしばかりに　長月の\n有明の月を　待ち出でつるかな","吹くからに　秋の草木の\nしをるれば\nむべ山風を\nあらしといふらむ","月見れば\nちぢにものこそ\n悲しけれ\nわが身ひとつの\n秋にはあらねど","このたびは\n幣も取りあへず\n手向山\n紅葉の錦\n神のまにまに","名にし負はば\n逢う坂山の\nさねかずら\n人に知られで\n来るよしもがな",
+        "小倉山\n峰の紅葉\n心あらば\nいまひとたびの\nみゆき待たなむ ","みかの原\nわきて流るる\nいづみ川\nいつ見きとてか\n恋しかるらむ ","山里は\n冬ぞ寂しさ\nまさりける\n人目も草も\nかれぬと思へば ","心あてに\n折らばや折らむ\n初霜の\n置きまどはせる\n白菊の花 ","有明の\nつれなく見えn別れより\n暁ばかり\n憂きものはなし",
+        "朝ぼらけ\n有明の月と\n見るまでに\n吉野の里に\n降れる白雪","山川に\n風のかけたる\nしがらみは\n流れもあへぬ\n紅葉なりけり","ひさかたの\n光のどけき\n春の日に\nしづ心なく\n花の散るらむ","誰をかも\n知る人にせむ\n高砂の\n松も昔の\n友ならなくに","人はいさ\n心も知らず\nふるさとは\n花ぞ昔の香に匂ひける",
+        "夏の夜は\nまだ宵ながら\n明けぬるを\n雲のいずこに\n月宿るらむ","白露に\n風の吹きしく\n秋の野は\nつらぬきとめぬ\n玉ぞ散りける","忘らるる\n身をば思はず\n誓ひてし\n人の命の\n惜しくもあるかな","浅茅生の\n小野の篠原\n忍ぶれど\nあまりてなどか\n人の恋しき","忍ぶれど\n色に出でにけり\nわが恋は\nものや思ふと\n人の問ふまで",
+        "恋すてふ\nわが名はまだき\n立ちにけり\n人知れずこそ\n思ひそめしか","契りきな\nかたみに袖を\nしぼりつつ\n末の松山\n波越さじとは ","逢ひ見ての\nのちの心に\nくらぶれば\n昔はものを\n思はざりけり","逢ふことの\n絶えてしなくは\nなかなかに\n人をも身をも\n恨みざらまし","あはれとも\nいふべき人は\n思ほえで\n身のいたずらに\nなりぬべきかな",
+        "由良の門を\n渡る舟人\nかぢを絶え\nゆくへも知らぬ\n恋のみちかな","八重むぐら\nしげれる宿の\nさびしきに\n人こそ見えね\n秋は来にけり","風をいたみ\n岩打つ波の\nおのれのみ\nくだけてものを\n思ふころかな"," みかきもり\n衛士のたく火の\n夜は燃え\n昼は消えつつ\nものをこそ思へ","君がため\n惜しからざりし\n命さへ\n長くもがなと\n思ひけるかな",
+        "かくとだに\nえやは伊吹の\nさしも草\nさしも知らじな\n燃ゆる思ひを","明けぬれば\n暮るるものとは\n知りながら\nなほ恨めしき\n朝ぼらけかな","嘆きつつ\nひとり寝る夜の\n明くる間は\nいかに久しき\nものとかは知る","忘れじの\nゆく末までは\nかたければ\n今日を限りの\n命ともがな","滝の音は\n絶えて久しく\nなりぬれど\n名こそ流れて\nなほ聞こえけれ",
+        "あらざらむ\nこの世のほかの\n思ひ出に\nいまひとたびの\n逢ふこともがな","めぐり逢ひて\n見しやそれとも\n分かぬ間に\n雲隠れにし\n夜半の月影","有馬山\n猪名の篠原\n風吹けば\nいでそよ人を\n忘れやはする","やすらはで\n寝なましものを\nさ夜更けて\nかたぶくまでの\n月を見しかな","大江山\nいく野の道の\n遠ければ\nまだふみも見ず\n天の橋立",
+        "いにしへの\n奈良の都の\n八重桜\nけふ九重に\n匂ひぬるかな","夜をこめて\n鳥のそら音は\nはかるとも\nよに逢坂の\n関は許さじ","今はただ\n思ひ絶えなむ\nとばかりを\n人づてならで\nいふよしもがな","朝ぼらけ\n宇治の川霧\nたえだえに\nあらはれわたる\n瀬々の網代木 ","恨みわび\n干さぬ袖だに\nあるものを\n恋に朽ちなむ\n名こそ惜しけれ",
+        "もろともに\nあはれと思え\n山桜\n花よりほかに\n知る人もなし","春の夜の\n夢ばかりなる\n手枕に\nかひなく立たむ\n名こそをしけれ","心にも\nあらで憂き夜に\n長らへば\n恋しかるべき\n夜半の月かな","嵐吹く\n三室の山の\nもみぢ葉は\n竜田の川の\n錦なりけり","寂しさに\n宿を立ち出でて\nながむれば\nいづくも同じ\n秋の夕暮れ",
+        "夕されば\n門田の稲葉\n訪れて\n蘆のまろ屋に\n秋風ぞ吹く","音に聞く\n高師の浜の\nあだ波は\nかけじや袖の\nぬれもこそすれ","高砂の\n尾の上の桜\n咲きにけり\n外山のかすみ\n立たずもあらなむ","憂かりける\n人を初瀬の\n山おろしよ\n激しかれとは\n祈らぬものを","契りおきし\nさせもが露を\n命にて\nあはれ今年の\n秋もいぬめり",
+        "わたの原\n漕ぎ出でて見れば\nひさかたの\n雲居にまがふ\n沖つ白波","瀬をはやみ\n岩にせかるる\n滝川の\nわれても末に\n逢はむとぞ思ふ","淡路島\n通ふ千鳥の\n鳴く声に\nいく夜寝覚めぬ\n須磨の関守","秋風に\nたなびく雲の\nたえ間より\n漏れ出づる\n月の影のさやけさ","ながからむ\n心も知らず\n黒髪の\n乱れてけさは\nものをこそ思へ",
+        "ほととぎす\n鳴きつる方を\nながむれば\nただ有明の\n月ぞ残れる","思ひわび\nさても命は\nあるものを\n憂きに堪へぬは\n涙なりけり","世の中よ\n道こそなけれ\n思ひ入る\n山の奥にも\n鹿ぞ鳴くなる","長らへば\nまたこのごろや\nしのばれむ\n憂しと見し世ぞ\n今は恋しき","夜もすがら\nもの思ふころは\n明けやらぬ\nねやのひまさへ\nつれなかりけり",
+        "嘆けとて\n月やはものを\n思はする\nかこちがほなる\nわが涙かな","村雨の\n露もまだ干ぬ\nまきの葉に\n霧立ちのぼる\n秋の夕暮","難波江の\n蘆のかりねの\nひとよゆゑ\n身を尽くしてや\n恋ひわたるべき","玉の緒よ\n絶えなば絶えね\nながらへば\n忍ぶることの\n弱りもぞする","見せばやな\n雄島の海人の\n袖だにも\n濡れにぞ濡れし\n色は変はらず",
+        "きりぎりす\n鳴くや霜夜の\nさむしろに\n衣かたしき\nひとりかも寝む","わが袖は\n潮干に見えぬ\n沖の石の\n人こそ知らね\nかわく間もなし","世の中は\n常にもがもな\n渚漕ぐ\n海人の小舟の\n綱手かなしも","み吉野の\n山の秋風さよ\n更けて\nふるさと寒く\n衣打つなり","おほけなく\n憂き世の民に\nおほふかな\nわが立つ杣に\nすみ染の袖",
+        "花さそふ\n嵐の庭の\n雪ならで\nふりゆくものは\nわが身なりけり","来ぬ人を\n松帆の浦の\n夕なぎに\n焼くや藻塩の\n身もこがれつつ","風そよぐ\n楢の小川の\n夕暮は\n御禊ぞ夏の\nしるしなりける","人も愛し\n人も恨めし\nあじきなく\n世を思ふゆゑに\nもの思ふ身は","百敷や\n古き軒端の\nしのぶにも\nなほ余りある\n昔なりけり"
     ]
     
     var dummyAnswerRnd1: Int = 0
@@ -280,28 +206,69 @@ class QuizViewController: UIViewController {
                 dummyAnswerRnd1 = Int(arc4random_uniform(10))
             }
             dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            while(dummyAnswerRnd2 == questionRnd){
-                dummyAnswerRnd2 = Int(arc4random_uniform(10))
-            }
-            while(dummyAnswerRnd2 == dummyAnswerRnd1){
+            while(dummyAnswerRnd2 == questionRnd || dummyAnswerRnd2 == dummyAnswerRnd1){
                 dummyAnswerRnd2 = Int(arc4random_uniform(10))
             }
         
         
         //<--------  選択肢の設定  ---------->
         if(selectAnswerRnd == 0){
-            answerButton1.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-             answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-             answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
+            answerTategakiTextView1.tategakiText(answerArray[questionRnd] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView1)
+
+            let answerTategakiTextView2 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView2.frame.origin.x, self.answerTextView2.frame.origin.y, self.answerTextView2.frame.width, self.answerTextView2.frame.height))
+            answerTategakiTextView2.tategakiText(answerArray[dummyAnswerRnd1] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView2)
+            
+            let answerTategakiTextView3 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView3.frame.origin.x, self.answerTextView3.frame.origin.y, self.answerTextView3.frame.width, self.answerTextView3.frame.height))
+            answerTategakiTextView3.tategakiText(answerArray[dummyAnswerRnd2] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView3)
+            
+            
+//             answerButton1.setTitle(answerArray[questionRnd], forState: .Normal)
+//             answerButton2.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
+//             answerButton3.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
         }else if(selectAnswerRnd == 1){
-            answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-            answerButton2.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
-            answerButton3.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
+            let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
+            answerTategakiTextView1.tategakiText(answerArray[dummyAnswerRnd1] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView1)
+            
+            let answerTategakiTextView2 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView2.frame.origin.x, self.answerTextView2.frame.origin.y, self.answerTextView2.frame.width, self.answerTextView2.frame.height))
+            answerTategakiTextView2.tategakiText(answerArray[questionRnd] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView2)
+            
+            let answerTategakiTextView3 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView3.frame.origin.x, self.answerTextView3.frame.origin.y, self.answerTextView3.frame.width, self.answerTextView3.frame.height))
+            answerTategakiTextView3.tategakiText(answerArray[dummyAnswerRnd2] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView3)
+            
+//            answerButton1.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
+//            answerButton2.setTitle(answerArray[questionRnd], forState: .Normal)
+//            answerButton3.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
         }else{ //selectAnswerRnd == 2
-            answerButton1.setBackgroundImage(answerArray[dummyAnswerRnd1], forState: .Normal)
-            answerButton2.setBackgroundImage(answerArray[dummyAnswerRnd2], forState: .Normal)
-            answerButton3.setBackgroundImage(answerArray[questionRnd], forState: .Normal)
+            let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
+            answerTategakiTextView1.tategakiText(answerArray[dummyAnswerRnd1] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView1)
+            
+            let answerTategakiTextView2 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView2.frame.origin.x, self.answerTextView2.frame.origin.y, self.answerTextView2.frame.width, self.answerTextView2.frame.height))
+            answerTategakiTextView2.tategakiText(answerArray[dummyAnswerRnd2] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView2)
+            
+            let answerTategakiTextView3 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView3.frame.origin.x, self.answerTextView3.frame.origin.y, self.answerTextView3.frame.width, self.answerTextView3.frame.height))
+            answerTategakiTextView3.tategakiText(answerArray[questionRnd] as! String, textSize: 17)
+            self.view.addSubview(answerTategakiTextView3)
+            
+//            answerButton1.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
+//            answerButton2.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
+//            answerButton3.setTitle(answerArray[questionRnd], forState: .Normal)
         }
+        
+        
+        self.view.bringSubviewToFront(answerButton3)
+        self.view.bringSubviewToFront(answerButton2)
+        self.view.bringSubviewToFront(answerButton1)
+        
+        
         
     }
 

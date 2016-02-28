@@ -98,7 +98,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oyJ-9d-LR3">
-                                <rect key="frame" x="20" y="84" width="283" height="105"/>
+                                <rect key="frame" x="20" y="84" width="283" height="111"/>
                                 <color key="backgroundColor" white="1" alpha="0.9296875" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -377,7 +377,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-J2-rG6">
-                                <rect key="frame" x="46" y="303" width="235" height="146"/>
+                                <rect key="frame" x="25" y="356" width="270" height="107"/>
                                 <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -389,11 +389,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwJ-LB-TGz">
+                                <rect key="frame" x="110" y="302" width="174" height="37"/>
+                                <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.817857897" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="作者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6By-dy-xx5">
+                                <rect key="frame" x="33" y="302" width="59" height="37"/>
+                                <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.817857897" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qy3-p2-kAt"/>
                     <connections>
+                        <outlet property="authorLabel" destination="fwJ-LB-TGz" id="sRD-hN-DBN"/>
                         <outlet property="haikeiLabel" destination="rwc-ef-SPH" id="8sC-kO-fsn"/>
                         <outlet property="resultLabel" destination="U9v-Oj-uhD" id="kSu-QT-vva"/>
                         <outlet property="setsumeiTextView" destination="d2S-J2-rG6" id="TkX-fE-jnj"/>
@@ -430,8 +445,8 @@
         <image name="result3.jpg" width="1280" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6pn-Xb-LXk"/>
-        <segue reference="8Bi-u8-FOa"/>
         <segue reference="qgo-IK-6L4"/>
+        <segue reference="8Bi-u8-FOa"/>
+        <segue reference="d1p-5X-bsk"/>
     </inferredMetricsTieBreakers>
 </document>

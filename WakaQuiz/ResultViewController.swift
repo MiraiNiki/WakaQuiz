@@ -13,6 +13,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var haikeiLabel: UIImageView!
     @IBOutlet weak var wakaTextView: UITextView!
+    @IBOutlet weak var setsumeiTextView: UITextView!
     var ifAnswer: Bool = false
     var questionIndex: Int = 0
     
@@ -44,15 +45,21 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //<-- 正解の判定をラベルに反映 -->
         if (ifAnswer == true) {
         resultLabel.text = "正解"
         }else{
         resultLabel.text = "不正解"
         }
         
+        //<-- 縦書きテキストの設定 -->
         let wakaTategakiTextView : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.wakaTextView.frame.origin.x, self.wakaTextView.frame.origin.y, self.wakaTextView.frame.width, self.wakaTextView.frame.height))
         wakaTategakiTextView.tategakiText(wakaArray[questionIndex] as! String, textSize: 19)
         self.view.addSubview(wakaTategakiTextView)
+        
+        
+        //<-- setsumeiTextViewの外部からの編集を不可能にする -->
+        setsumeiTextView.editable = false
 
     }
 

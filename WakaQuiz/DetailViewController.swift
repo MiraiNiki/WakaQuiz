@@ -56,10 +56,11 @@ class DetailViewController: UIViewController {
         "きりぎりす\n鳴くや霜夜の\nさむしろに\n衣かたしき\nひとりかも寝む","わが袖は\n潮干に見えぬ\n沖の石の\n人こそ知らね\nかわく間もなし","世の中は\n常にもがもな\n渚漕ぐ\n海人の小舟の\n綱手かなしも","み吉野の\n山の秋風\nさよ更けて\nふるさと寒く\n衣打つなり","おほけなく\n憂き世の民に\nおほふかな\nわが立つ杣に\nすみ染の袖",
         "花さそふ\n嵐の庭の\n雪ならで\nふりゆくものは\nわが身なりけり","来ぬ人を\n松帆の浦の\n夕なぎに\n焼くや藻塩の\n身もこがれつつ","風そよぐ\n楢の小川の\n夕暮は\n御禊ぞ夏の\nしるしなりける","人も愛し\n人も恨めし\nあじきなく\n世を思ふゆゑに\nもの思ふ身は","百敷や\n古き軒端の\nしのぶにも\nなほ余りある\n昔なりけり"
     ]
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setsumeiTextView.editable = false //setsumeiTextViewを編集不可能にする。
 
         let wakaTategakiTextView : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.wakaTextView.frame.origin.x, self.wakaTextView.frame.origin.y, self.wakaTextView.frame.width, self.wakaTextView.frame.height))
         wakaTategakiTextView.tategakiText(wakaArray[wakaIndex] as! String, textSize: 19)
@@ -68,9 +69,6 @@ class DetailViewController: UIViewController {
 
         numberLabel.text = "第\(wakaIndex+1)番"
         authorLabel.text = authorArray[wakaIndex] as? String
-        
-        
-        
     
     }
     

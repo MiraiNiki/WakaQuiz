@@ -396,6 +396,7 @@
                     <connections>
                         <outlet property="haikeiLabel" destination="rwc-ef-SPH" id="8sC-kO-fsn"/>
                         <outlet property="resultLabel" destination="U9v-Oj-uhD" id="kSu-QT-vva"/>
+                        <outlet property="setsumeiTextView" destination="d2S-J2-rG6" id="TkX-fE-jnj"/>
                         <outlet property="wakaTextView" destination="90G-u1-eOK" id="XZW-Qv-gl9"/>
                     </connections>
                 </viewController>

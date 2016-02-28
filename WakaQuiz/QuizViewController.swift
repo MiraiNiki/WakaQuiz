@@ -111,35 +111,51 @@ class QuizViewController: UIViewController {
         "どうしてあなたは夜の夢の中でも人目を避けるのですか。すみの江の岸に波がうちよるように。\n",
         "難波潟に生える葦の節の間のような短い間でさえもあなたに合わないでどうしてこの世を過ごしてとおっしゃるのでしょうか。\n",
         "会うこともできずに思い煩うのは身を捨てたのと同じだ。身を尽くしてもあなたに会いたいものだ。\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
+        "夜があけていく頃に外を眺めると有明の月の光かと思うほどに、吉野の里に真っ白な雪が降り積もっているなあ。\n",
+        "山の中を流れる川をせき止めるようにして作られた柵は、紅葉が川面にたくさん散って流れている紅葉だったよ。\n",
+        "穏やかでのどかな春の日に、どうして桜は落ち着きなく散り急いでいるのだろうか。\n",
+        "年老いた私は一体誰を心友としようか。古いと名高い高砂の松の木でさえ昔馴染みの友ではないのに。\n",
+        "あなたの心は昔のままでしょうか。昔馴染みのこの里には昔のまま梅の花の香りがしていますよ。\n",
+        "夏の短い夜は、あっという間に開けてしまうなあ。一体月は雲のどこに隠れるのだろうか。\n",
+        "葉の上の白露に風が吹き当たっている秋の野は、その白露が風に散り乱れて、まるでガラス玉が散らばっているようだなあ。\n",
+        "あなたから忘れられても私は気にしません。しかし、あんなにも神様に誓った愛が消えることで、神様の罰をあなたが受けないか心配になのです。\n",
+        "ススキや細い竹がまばらに生えている篠のように私は恋を忍ばせていましたが、忍びきれず、どうしてこんなにあなたを恋しく思ってしまうのでしょうか。\n",
+        "誰にも知られないようにしていたのに、私の恋心は周りの人から尋ねられるほどには顔に出るようになってしまいました。\n",
+        "私が恋をしているという噂が早くも広まってしまった。人知れずに密かに恋をし始めたところだったのになあ。\n",
+        "あなたと二人で袖をしぼれるくらいに涙を流して誓いましたね。松山を波が超えないのと同じくらい、絶対に心変わりはしないと。\n",
+        "あなたにお会いできて一緒に過ごした気持ちに比べると、お会いする前の恋の気持ちなどないも同然ですよ。\n",
+        "もしも会うことが全くないのならば、あなたの無情を恨んだり私自身の辛さを恨んだりすることはなかったでしょうに。\n",
+        "死んだとしても可哀想だと泣いてくれる人がいると思えないまま、私は孤独に死んでいくのだろうか。\n",
+        "舟人が舵を失くして、船が行くあても知らずに漂うように、私の恋路もどうなっていくのかわからず漂っている。\n",
+        "つる草のむぐらのような雑草がたくさん茂っている荒地の住まいに尋ねる人はいないが、秋だけはやってきてくれたのだなあ。\n",
+        "風が激しいので、岩に当たる波がくだけ散るように、私一人だけが心砕かれ、恋して思い悩むのだよ。\n",
+        "宮中を守る衛士がたくかがり火のように夜は激しく燃え上り、昼間は消えそうに重い沈んでいることだよ。\n",
+        "あなたにお会いするためなら惜しくない命でしたが、お会いしてからは少しでも長く生きたいと思うようになったことだよ。\n",
+        "あなたのことをこんなに思っていることを伝えることもできないのだから、伊吹山に生えるさしも草の香りのように、私の熱い思いをあなたはご存知ないのでしょうね。\n",
+        "また暮れればあなたにお会いできるとわかっていても夜が明けるのは恨めしく思ってしまいます。\n",
+        "あなたがいらっしゃらないことを嘆きながら一人で明ける夜がどんなに長いものか、お分かりになりますか。お分かりにならないでしょうけれど。\n",
+        "いつまでも忘れないとおっしゃるけれど、それは難しいことなので、いっその事今日を限りに死んでしまいたい。\n",
+        "水が枯れて、音を立てる事もなくなってから随分と長い月日が経ちましたが、その滝の名声は世に流れて知れ渡っています。\n",
+        "もう直ぐ病気で死んでしまうので、死ぬ前にもう一度だけあなたに会いたい。\n",
+        "久しぶりに会えたのに直ぐに雲に隠れてしまう夜明けの月のように、あなたもあっという間に帰ってしまいましたね。\n",
+        "有馬山の近くの笹原に風が吹けば、そよそよと音がする。どうして私があなたのことを忘れることができましょうか。\n",
+        "あなたがいらっしゃらないと分かっていたなら、躊躇わずに寝てしまいました。お待ちしているうちに夜も更けて月が西に傾いてしまいました。\n",
+        "大江山を超えて幾野へ行く道はとても遠いので、天橋立へは行ったこともありませんし、母からの手紙を見てもいませんよ。\n",
+        "昔都があった、奈良の八重桜が今日は九重の宮中に美しくさいていることですよ。\n",
+        "夜が明けないうちに鶏の声真似をして私を騙そうとしても、あなたにお会いすることはありませんよ。\n",
+        "今はもうあなたのことを諦めてしまおう。このことを人づてではなくあなたにお会いして言う方法があればいいのになあ。\n",
+        "夜がほのぼのと明ける頃、宇治川にかかる霧が途切れ途切れになって、その間から見えて来る魚を捕らえるための網代木であったよ。\n",
+        "あの人の釣れなさに恨み嘆いて泣き枯れてしまいそうなのにそれにも増して恋の噂がみっともなく広まってしまい、私の名前に傷がつくのは惜しいことだ。\n",
+        "山桜よ、私がお前を懐かしく思うように、お前も私を懐かしく思ってくれよ。こんな山奥に入った私にはお前の他に私の心境を知る者などいないのだから。\n",
+        "春の夜の夢のように儚くて短い戯れのためにつまらない噂が立ってしまうのでしょう。恥ずかしく私の名前が広がってしまうのは惜しいなあ。\n",
+        "辛い世の中を思いがけなく生きながらえば、きっと夜半の月を美しく感じるだろう。\n",
+        "神様がいらっしゃる御室山の紅葉は、竜田川に散り落ちてまるで錦のようだ。\n",
+        "あまりの寂しさに耐えかねて宿を出てみれば、どこもかしこも寂しい秋の夕暮れだったよ。\n",
+        "夕方になると、門の前の稲の葉がそよそよと葉を揺らし葦で出来た粗末な家に秋風が吹いているよ。\n",
+        "浮気と名高いあなたに気をつけておかなければ、噂に名高い高師の浜の大げさに立つ波で袖が濡れるように私は涙で袖を濡らすことになってしまいそうで困ります。\n",
+        "遠くに見える山の峰に桜が咲いたなあ。どうか、近くの山の霞よ、どうか立ち込めないでおくれ。\n",
+        "あの人が振り向いてくれますようにと初瀬の観音様にお祈りしましたが、山おろしの激しさのように恋が辛く激しくなってしまうようにとはお祈りしなかったのになあ。\n",
+        "お約束してくださった私を\n",
         "\n",
         "\n",
         "\n",
@@ -181,6 +197,9 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //<--------     questionTextViewを編集可能にする。      -------->
+        questionTextView.editable = false
+        
         ifAnswer = false
         
         //<--------     背景をランダムに設定　　---------->
@@ -211,7 +230,8 @@ class QuizViewController: UIViewController {
             }
         
         
-        //<--------  選択肢の設定  ---------->
+        //<--------  選択肢の設定・縦書きテキストの配置  ---------->
+        //位置は各textView
         if(selectAnswerRnd == 0){
             let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
             answerTategakiTextView1.tategakiText(answerArray[questionRnd] as! String, textSize: 17)
@@ -224,11 +244,7 @@ class QuizViewController: UIViewController {
             let answerTategakiTextView3 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView3.frame.origin.x, self.answerTextView3.frame.origin.y, self.answerTextView3.frame.width, self.answerTextView3.frame.height))
             answerTategakiTextView3.tategakiText(answerArray[dummyAnswerRnd2] as! String, textSize: 17)
             self.view.addSubview(answerTategakiTextView3)
-            
-            
-//             answerButton1.setTitle(answerArray[questionRnd], forState: .Normal)
-//             answerButton2.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
-//             answerButton3.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
+
         }else if(selectAnswerRnd == 1){
             let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
             answerTategakiTextView1.tategakiText(answerArray[dummyAnswerRnd1] as! String, textSize: 17)
@@ -242,9 +258,6 @@ class QuizViewController: UIViewController {
             answerTategakiTextView3.tategakiText(answerArray[dummyAnswerRnd2] as! String, textSize: 17)
             self.view.addSubview(answerTategakiTextView3)
             
-//            answerButton1.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
-//            answerButton2.setTitle(answerArray[questionRnd], forState: .Normal)
-//            answerButton3.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
         }else{ //selectAnswerRnd == 2
             let answerTategakiTextView1 : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.answerTextView1.frame.origin.x, self.answerTextView1.frame.origin.y, self.answerTextView1.frame.width, self.answerTextView1.frame.height))
             answerTategakiTextView1.tategakiText(answerArray[dummyAnswerRnd1] as! String, textSize: 17)
@@ -258,12 +271,9 @@ class QuizViewController: UIViewController {
             answerTategakiTextView3.tategakiText(answerArray[questionRnd] as! String, textSize: 17)
             self.view.addSubview(answerTategakiTextView3)
             
-//            answerButton1.setTitle(answerArray[dummyAnswerRnd1], forState: .Normal)
-//            answerButton2.setTitle(answerArray[dummyAnswerRnd2], forState: .Normal)
-//            answerButton3.setTitle(answerArray[questionRnd], forState: .Normal)
         }
         
-        
+        //<-----   縦書きテキストよりもボタンを前に配置する。   ----->
         self.view.bringSubviewToFront(answerButton3)
         self.view.bringSubviewToFront(answerButton2)
         self.view.bringSubviewToFront(answerButton1)

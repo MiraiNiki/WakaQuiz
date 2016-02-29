@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class WakaListTableViewController: UITableViewController {
 //
@@ -36,9 +37,14 @@ class WakaListTableViewController: UITableViewController {
         " 96. 花さそふ嵐の庭の雪ならで\n　　ふりゆくものはわが身なりけり"," 97. 来ぬ人を松帆の浦の夕なぎに\n　　焼くや藻塩の身もこがれつつ"," 98. 風そよぐ楢の小川の夕暮は\n　　御禊ぞ夏のしるしなりける"," 99. 人も愛し人も恨めしあじきなく\n　　世を思ふゆゑにもの思ふ身は"," 100. 百敷や古き軒端のしのぶにも\n　　 なほ余りある昔なりけり"
             ]
     
+    var seDetail: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //<-- 効果音の設定 -->
+        seDetail = mkAudioPlayer("seDetail", bgmType: "mp3")
+        seDetail!.volume = 0.3
         
         tableView.registerNib(UINib(nibName: "WakaListTableViewCell",bundle:nil), forCellReuseIdentifier: "cell")
 
@@ -80,6 +86,7 @@ class WakaListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         wakaIndex = indexPath.row
+        seDetail?.play()
         performSegueWithIdentifier("toDetailViewController", sender: nil)
     }
     

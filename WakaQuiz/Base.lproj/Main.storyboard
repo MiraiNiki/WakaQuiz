@@ -317,6 +317,7 @@
                                     <color key="titleColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="backTableButtonPushed:" destination="9X1-Qs-Q19" eventType="touchUpInside" id="MAD-Nm-64u"/>
                                     <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="flipHorizontal" id="6pn-Xb-LXk"/>
                                 </connections>
                             </button>
@@ -465,7 +466,7 @@
         <image name="wakaIcon.png" width="2168" height="2168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d1p-5X-bsk"/>
+        <segue reference="6pn-Xb-LXk"/>
         <segue reference="PX0-d8-9s2"/>
     </inferredMetricsTieBreakers>
 </document>

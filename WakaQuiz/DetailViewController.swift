@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DetailViewController: UIViewController {
 
@@ -155,8 +156,14 @@ class DetailViewController: UIViewController {
         "荒れ果ててしまった御所の古い軒下に生えるしのぶ草の葉を見るにつけて、昔の御所の華やかさがしみじみと偲ばれて偲んでも偲んでも偲びきれない。昔の天皇を中心に平和に治められていたこの時代のことは。\n"
     ]
     
+    var seDetail: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //<-- 効果音の設定 -->
+        seDetail = mkAudioPlayer("seDetail", bgmType: "mp3")
+        seDetail!.volume = 0.3
         
         setsumeiTextView.editable = false //setsumeiTextViewを編集不可能にする。
 
@@ -172,6 +179,9 @@ class DetailViewController: UIViewController {
     
     }
     
+    @IBAction func backTableButtonPushed(sender: AnyObject) {
+        seDetail?.play()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

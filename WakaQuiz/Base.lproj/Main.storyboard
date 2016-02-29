@@ -26,18 +26,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE030152_02_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iua-2w-SRp">
                                 <rect key="frame" x="0.0" y="453" width="320" height="115"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-kV-eXf">
-                                <rect key="frame" x="23" y="340" width="277" height="67"/>
-                                <color key="backgroundColor" red="0.869098961353302" green="0.95868414640426636" blue="0.83479946851730347" alpha="0.83258551520270274" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="問題スタート">
-                                    <color key="titleColor" red="0.048389546573162079" green="0.13027963042259216" blue="0.077035658061504364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="questionButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zs-Tg-aMV"/>
-                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wakaIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-5X-ibN">
                                 <rect key="frame" x="23" y="28" width="275" height="256"/>
                             </imageView>
@@ -53,9 +41,37 @@
                                     <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-Rc-bRq">
+                                <rect key="frame" x="20" y="340" width="280" height="67"/>
+                                <color key="backgroundColor" red="0.83504730463027954" green="0.957408607006073" blue="0.84459918737411499" alpha="0.73207875844594594" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-0v-igE">
+                                <rect key="frame" x="20" y="340" width="280" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="0.048389546573162079" green="0.13027963042259216" blue="0.077035658061504364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-kV-eXf">
+                                <rect key="frame" x="23" y="340" width="277" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.048389546573162079" green="0.13027963042259216" blue="0.077035658061504364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="questionButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zs-Tg-aMV"/>
+                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionButton" destination="pEf-kV-eXf" id="ML5-hs-Qnt"/>
+                        <outlet property="questionLabel" destination="IFF-0v-igE" id="gt6-wf-9Gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

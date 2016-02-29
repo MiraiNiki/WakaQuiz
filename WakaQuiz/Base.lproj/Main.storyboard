@@ -17,45 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="003.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ath-cW-l9L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE080001_01_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ath-cW-l9L">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-wX-ldz">
-                                <rect key="frame" x="6" y="293" width="309" height="99"/>
-                                <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BaN-0w-4Xa">
-                                <rect key="frame" x="6" y="421" width="309" height="67"/>
-                                <color key="backgroundColor" red="1" green="0.6549019814" blue="0.0" alpha="0.70286106418918914" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE020340_03_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-c8-mpk">
+                                <rect key="frame" x="0.0" y="313" width="320" height="255"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE030152_02_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iua-2w-SRp">
+                                <rect key="frame" x="0.0" y="453" width="320" height="115"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-kV-eXf">
-                                <rect key="frame" x="6" y="309" width="309" height="67"/>
-                                <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="23" y="340" width="277" height="67"/>
+                                <color key="backgroundColor" red="0.869098961353302" green="0.95868414640426636" blue="0.83479946851730347" alpha="0.83258551520270274" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="問題スタート">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.048389546573162079" green="0.13027963042259216" blue="0.077035658061504364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wakaIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-5X-ibN">
+                                <rect key="frame" x="23" y="28" width="275" height="256"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-Zi-nNp">
-                                <rect key="frame" x="6" y="434" width="309" height="43"/>
-                                <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="474" width="280" height="43"/>
+                                <color key="backgroundColor" red="0.97111254930496216" green="0.93549627065658569" blue="0.98178321123123169" alpha="0.78125" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="百人一首一覧">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1279529333114624" green="0.057638466358184814" blue="0.23951965570449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-5X-ibN">
-                                <rect key="frame" x="13" y="20" width="294" height="254"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -440,13 +435,16 @@
     </scenes>
     <resources>
         <image name="001.jpg" width="1281" height="1281"/>
-        <image name="003.jpg" width="1281" height="1281"/>
+        <image name="WE020340_03_1280.jpg" width="1280" height="1280"/>
+        <image name="WE030152_02_1280.jpg" width="1280" height="1280"/>
+        <image name="WE080001_01_1280.jpg" width="1280" height="1280"/>
         <image name="result1.jpg" width="1280" height="1280"/>
         <image name="result3.jpg" width="1280" height="1280"/>
+        <image name="wakaIcon.png" width="2168" height="2168"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qgo-IK-6L4"/>
-        <segue reference="8Bi-u8-FOa"/>
+        <segue reference="3iF-iW-PVh"/>
         <segue reference="d1p-5X-bsk"/>
     </inferredMetricsTieBreakers>
 </document>

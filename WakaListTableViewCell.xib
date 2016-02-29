@@ -14,6 +14,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE050374_03_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5hB-zx-erp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-6G-Fo1">
                         <rect key="frame" x="8" y="0.0" width="304" height="43"/>
                         <color key="backgroundColor" white="1" alpha="0.82450907939189189" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -29,4 +32,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="WE050374_03_1280.jpg" width="1280" height="1280"/>
+    </resources>
 </document>

@@ -112,6 +112,12 @@
 		890C901C1C7A01060023AE5F /* u093.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C901B1C7A01060023AE5F /* u093.jpg */; };
 		890C907E1C7FCDCD0023AE5F /* WakaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */; };
 		890C907F1C7FCDCD0023AE5F /* WakaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */; };
+		890C90811C83CE4F0023AE5F /* wakaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C90801C83CE4F0023AE5F /* wakaIcon.png */; };
+		890C90831C83D0DD0023AE5F /* WE030152_02_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C90821C83D0DD0023AE5F /* WE030152_02_1280.jpg */; };
+		890C90861C83D27D0023AE5F /* WE050374_03_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C90841C83D27D0023AE5F /* WE050374_03_1280.jpg */; };
+		890C90871C83D27D0023AE5F /* WE080001_01_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C90851C83D27D0023AE5F /* WE080001_01_1280.jpg */; };
+		890C90891C83D2840023AE5F /* WE050349_02_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C90881C83D2840023AE5F /* WE050349_02_1280.jpg */; };
+		890C908B1C83D28A0023AE5F /* WE020340_03_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 890C908A1C83D28A0023AE5F /* WE020340_03_1280.jpg */; };
 		892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0A1C7596CC00741D83 /* AppDelegate.swift */; };
 		892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0C1C7596CC00741D83 /* ViewController.swift */; };
 		892D4F101C7596CC00741D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F0E1C7596CC00741D83 /* Main.storyboard */; };
@@ -308,6 +314,12 @@
 		890C901B1C7A01060023AE5F /* u093.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = u093.jpg; sourceTree = "<group>"; };
 		890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WakaListTableViewCell.swift; path = ../WakaListTableViewCell.swift; sourceTree = "<group>"; };
 		890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WakaListTableViewCell.xib; path = ../WakaListTableViewCell.xib; sourceTree = "<group>"; };
+		890C90801C83CE4F0023AE5F /* wakaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wakaIcon.png; sourceTree = "<group>"; };
+		890C90821C83D0DD0023AE5F /* WE030152_02_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WE030152_02_1280.jpg; sourceTree = "<group>"; };
+		890C90841C83D27D0023AE5F /* WE050374_03_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WE050374_03_1280.jpg; sourceTree = "<group>"; };
+		890C90851C83D27D0023AE5F /* WE080001_01_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WE080001_01_1280.jpg; sourceTree = "<group>"; };
+		890C90881C83D2840023AE5F /* WE050349_02_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WE050349_02_1280.jpg; sourceTree = "<group>"; };
+		890C908A1C83D28A0023AE5F /* WE020340_03_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WE020340_03_1280.jpg; sourceTree = "<group>"; };
 		892D4F071C7596CC00741D83 /* WakaQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakaQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892D4F0A1C7596CC00741D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		892D4F0C1C7596CC00741D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -558,11 +570,17 @@
 				892D4F0C1C7596CC00741D83 /* ViewController.swift */,
 				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
 				892D4F3E1C774AC800741D83 /* DetailViewController.swift */,
+				890C90821C83D0DD0023AE5F /* WE030152_02_1280.jpg */,
 				892D4F3C1C774A3C00741D83 /* WakaListTableViewController.swift */,
+				890C90841C83D27D0023AE5F /* WE050374_03_1280.jpg */,
+				890C90851C83D27D0023AE5F /* WE080001_01_1280.jpg */,
+				890C90881C83D2840023AE5F /* WE050349_02_1280.jpg */,
+				890C908A1C83D28A0023AE5F /* WE020340_03_1280.jpg */,
 				890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */,
 				890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */,
 				892D4F381C7749B900741D83 /* QuizViewController.swift */,
 				892D4F3A1C7749FB00741D83 /* ResultViewController.swift */,
+				890C90801C83CE4F0023AE5F /* wakaIcon.png */,
 				890C8F521C79947C0023AE5F /* wakaImage */,
 				890C8F4B1C798B2C0023AE5F /* Defaults-master */,
 				892D50211C78152600741D83 /* resultImage */,
@@ -806,13 +824,16 @@
 				890C8FEB1C79947C0023AE5F /* u053.jpg in Resources */,
 				890C8FDC1C79947C0023AE5F /* u038.jpg in Resources */,
 				890C8FE81C79947C0023AE5F /* u050.jpg in Resources */,
+				890C90811C83CE4F0023AE5F /* wakaIcon.png in Resources */,
 				890C8FD21C79947C0023AE5F /* u028.jpg in Resources */,
 				890C8FCA1C79947C0023AE5F /* u020.jpg in Resources */,
 				890C90181C79947C0023AE5F /* u099.jpg in Resources */,
 				890C900C1C79947C0023AE5F /* u086.jpg in Resources */,
 				892D500C1C775B1F00741D83 /* 034.jpg in Resources */,
 				890C8FE51C79947C0023AE5F /* u047.jpg in Resources */,
+				890C908B1C83D28A0023AE5F /* WE020340_03_1280.jpg in Resources */,
 				890C90021C79947C0023AE5F /* u076.jpg in Resources */,
+				890C90861C83D27D0023AE5F /* WE050374_03_1280.jpg in Resources */,
 				892D50091C775B1F00741D83 /* 031.jpg in Resources */,
 				892D500D1C775B1F00741D83 /* 035.jpg in Resources */,
 				890C8FE41C79947C0023AE5F /* u046.jpg in Resources */,
@@ -832,6 +853,7 @@
 				890C8FF51C79947C0023AE5F /* u063.jpg in Resources */,
 				890C8FC51C79947C0023AE5F /* u015.jpg in Resources */,
 				890C8FB71C79947C0023AE5F /* u001.jpg in Resources */,
+				890C90831C83D0DD0023AE5F /* WE030152_02_1280.jpg in Resources */,
 				890C90171C79947C0023AE5F /* u098.jpg in Resources */,
 				890C8FD41C79947C0023AE5F /* u030.jpg in Resources */,
 				890C8FFA1C79947C0023AE5F /* u068.jpg in Resources */,
@@ -844,6 +866,7 @@
 				892D50031C775B1F00741D83 /* 025.jpg in Resources */,
 				890C8FDA1C79947C0023AE5F /* u036.jpg in Resources */,
 				890C90131C79947C0023AE5F /* u094.jpg in Resources */,
+				890C90871C83D27D0023AE5F /* WE080001_01_1280.jpg in Resources */,
 				890C8FC11C79947C0023AE5F /* u011.jpg in Resources */,
 				892D50171C775B1F00741D83 /* 045.jpg in Resources */,
 				892D4F461C7754E000741D83 /* tatami01.pat in Resources */,
@@ -909,6 +932,7 @@
 				892D50071C775B1F00741D83 /* 029.jpg in Resources */,
 				890C8FD01C79947C0023AE5F /* u026.jpg in Resources */,
 				890C8FBD1C79947C0023AE5F /* u007.jpg in Resources */,
+				890C90891C83D2840023AE5F /* WE050349_02_1280.jpg in Resources */,
 				892D50051C775B1F00741D83 /* 027.jpg in Resources */,
 				892D50061C775B1F00741D83 /* 028.jpg in Resources */,
 				892D50261C78152600741D83 /* result2.jpg in Resources */,

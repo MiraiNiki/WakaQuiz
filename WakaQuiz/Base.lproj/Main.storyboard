@@ -350,17 +350,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="result1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rwc-ef-SPH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhR-O8-5sn">
-                                <rect key="frame" x="173" y="480" width="127" height="73"/>
-                                <color key="backgroundColor" red="0.93569380044937134" green="0.72918277978897095" blue="0.80115115642547607" alpha="0.5331239442567568" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="次の問題へ">
-                                    <color key="titleColor" red="0.91509288549423218" green="0.2559816837310791" blue="0.24309861660003662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="partialCurl" id="8Bi-u8-FOa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-u8-UbJ">
                                 <rect key="frame" x="20" y="480" width="117" height="73"/>
                                 <color key="backgroundColor" red="0.9246554970741272" green="0.80554085969924927" blue="0.94995194673538208" alpha="0.69285789695945943" colorSpace="custom" customColorSpace="sRGB"/>
@@ -418,6 +407,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhR-O8-5sn">
+                                <rect key="frame" x="173" y="480" width="127" height="73"/>
+                                <color key="backgroundColor" red="0.93569380044937134" green="0.72918277978897095" blue="0.80115115642547607" alpha="0.5331239442567568" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="次の問題へ">
+                                    <color key="titleColor" red="0.91509288549423218" green="0.2559816837310791" blue="0.24309861660003662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPushed:" destination="r1b-MA-9Xi" eventType="touchUpInside" id="LGb-gQ-J5I"/>
+                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="partialCurl" id="PX0-d8-9s2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -465,6 +466,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="d1p-5X-bsk"/>
-        <segue reference="8Bi-u8-FOa"/>
+        <segue reference="PX0-d8-9s2"/>
     </inferredMetricsTieBreakers>
 </document>

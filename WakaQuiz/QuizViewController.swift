@@ -220,9 +220,15 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
     //正解をどのボタンに表示させるか。
     var selectAnswerRnd: Int = 0
     
+    var sePage : AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //<-- 効果音の設定 -->
+        sePage = mkAudioPlayer("page", bgmType: "mp3")
+        sePage!.volume = 0.3
         
         //<--------     questionTextViewを編集可能にする。      -------->
         questionTextView.editable = false
@@ -312,6 +318,7 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 0){
             ifAnswer = true
         }
+        sePage?.play()
         performSegueToResult()
     }
 
@@ -319,6 +326,7 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 1){
             ifAnswer = true
         }
+        sePage?.play()
         performSegueToResult()
     }
     
@@ -326,6 +334,7 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 2){
             ifAnswer = true
         }
+        sePage?.play()
         performSegueToResult()
     }
     
@@ -356,8 +365,9 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+
+    
     /*
     // MARK: - Navigation
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ResultViewController: UIViewController {
 
@@ -152,11 +153,16 @@ class ResultViewController: UIViewController {
         "荒れ果ててしまった御所の古い軒下に生えるしのぶ草の葉を見るにつけて、昔の御所の華やかさがしみじみと偲ばれて偲んでも偲んでも偲びきれない。昔の天皇を中心に平和に治められていたこの時代のことは。\n"
     ]
 
-    
+    var sePage : AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //<-- 効果音の設定 -->
+        sePage = mkAudioPlayer("page", bgmType: "mp3")
+        sePage!.volume = 0.3
+        
+        
         //<-- 正解の判定をラベルに反映 -->
         if (ifAnswer == true) {
         resultLabel.text = "正解"
@@ -175,6 +181,9 @@ class ResultViewController: UIViewController {
         //<-- setsumeiTextViewの外部からの編集を不可能にする -->
         setsumeiTextView.editable = false
 
+    }
+    @IBAction func nextButtonPushed(sender: AnyObject) {
+        sePage?.play()
     }
 
     

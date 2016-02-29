@@ -18,7 +18,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         bgm = mkAudioPlayer("oto004", bgmType: "mp3")
-        bgm!.volume = 0.5
+        bgm!.volume = 0.3
         bgm!.numberOfLoops = -1
         bgm!.play()
     }

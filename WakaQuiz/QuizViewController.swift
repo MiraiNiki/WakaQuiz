@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class QuizViewController: UIViewController {
+class QuizViewController: UIViewController,AVAudioPlayerDelegate {
 
     @IBOutlet weak var haikeiImage: UIImageView!
 
@@ -27,7 +28,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerTextView3: UITextView!
     
     var ifAnswer:Bool = false //正解の数を記憶
-   
+    
     //背景の画像をランダム表示
     var haikeiImgArray:[UIImage] = [
         UIImage(named: "001.jpg")!,

@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE080001_01_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ath-cW-l9L">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE080001_01_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-IG-LoQ">
+                                <rect key="frame" x="-88" y="-69" width="527" height="508"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE020340_03_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-c8-mpk">
                                 <rect key="frame" x="0.0" y="313" width="320" height="255"/>
@@ -34,6 +34,7 @@
                                     <color key="titleColor" red="0.048389546573162079" green="0.13027963042259216" blue="0.077035658061504364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="questionButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zs-Tg-aMV"/>
                                     <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
                                 </connections>
                             </button>
@@ -48,6 +49,7 @@
                                     <color key="titleColor" red="0.1279529333114624" green="0.057638466358184814" blue="0.23951965570449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="detailButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbw-ya-mGd"/>
                                     <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
                                 </connections>
                             </button>

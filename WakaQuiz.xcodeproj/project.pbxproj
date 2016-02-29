@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890165D21C843C5B00AEB70E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890165D11C843C5B00AEB70E /* AVFoundation.framework */; };
 		890C8F4F1C798B2C0023AE5F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */; };
 		890C8F501C798B2C0023AE5F /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */; };
 		890C8F511C798B2C0023AE5F /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */; };
@@ -209,6 +210,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890165D11C843C5B00AEB70E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890165D21C843C5B00AEB70E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +549,7 @@
 		892D4EFE1C7596CC00741D83 = {
 			isa = PBXGroup;
 			children = (
+				890165D11C843C5B00AEB70E /* AVFoundation.framework */,
 				892D4F091C7596CC00741D83 /* WakaQuiz */,
 				892D4F1E1C7596CC00741D83 /* WakaQuizTests */,
 				892D4F291C7596CC00741D83 /* WakaQuizUITests */,

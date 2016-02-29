@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController{
 
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
+    var bgm : AVAudioPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        bgm = mkAudioPlayer("oto004", bgmType: "mp3")
+        bgm!.volume = 0.5
+        bgm!.numberOfLoops = -1
+        bgm!.play()
     }
+    
     //<-- viewDidLoadは一回だけ呼ばれる。 -->
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -26,10 +33,9 @@ class ViewController: UIViewController{
         subLabel.font = UIFont.systemFontOfSize(26)
         self.view.addSubview(subLabel)
         
-        UILabel.animateWithDuration(2.0,delay: 0.0, options:  UIViewAnimationOptions.Repeat ,animations: {() -> Void in
+        UILabel.animateWithDuration(2.0,delay: 0.0, options:  UIViewAnimationOptions.Repeat,animations: {() -> Void in
             subLabel.alpha = 0.0
             }, completion: nil)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +45,16 @@ class ViewController: UIViewController{
 
     @IBAction func questionButtonPushed(sender: AnyObject) {
         questionLabel.alpha = 1.0
-
     }
     
     @IBAction func detailButtonPushed(sender: AnyObject) {
-
         questionLabel.alpha = 1.0
     }
     
+    //viewDidLoadの呼び出し（画面のインスタンスの作成）を一回で済ませる。
+    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+        
+    }
 
 }
 

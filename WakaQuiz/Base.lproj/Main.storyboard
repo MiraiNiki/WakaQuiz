@@ -223,7 +223,7 @@
                         <barButtonItem key="leftBarButtonItem" title="戻る" id="LSe-km-Y1i">
                             <color key="tintColor" red="0.18961447477340698" green="0.41580429673194885" blue="0.083521075546741486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="fRO-fY-YDp"/>
+                                <segue destination="tMb-5e-9v4" kind="unwind" unwindAction="unwindToTop:" id="bnm-U6-l0h"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -232,6 +232,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAl-Vv-hPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tMb-5e-9v4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="573" y="1023"/>
         </scene>
@@ -305,7 +306,7 @@
                                     <color key="titleColor" red="0.26918154954910278" green="0.25958737730979919" blue="0.91298264265060425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="RNM-kU-65c"/>
+                                    <segue destination="rSA-a2-4kt" kind="unwind" unwindAction="unwindToTop:" id="6q2-zH-oxj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-lq-AfG">
@@ -330,6 +331,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ud1-UO-ulL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rSA-a2-4kt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1012" y="1029"/>
         </scene>
@@ -367,7 +369,7 @@
                                     <color key="titleColor" red="0.28980216383934021" green="0.25413575768470764" blue="0.8903154730796814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="qgo-IK-6L4"/>
+                                    <segue destination="8Da-yg-vAx" kind="unwind" unwindAction="unwindToTop:" id="BcB-we-udd"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="03N-El-bXE">
@@ -429,6 +431,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT3-xq-TA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8Da-yg-vAx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="985" y="274"/>
         </scene>
@@ -461,8 +464,7 @@
         <image name="wakaIcon.png" width="2168" height="2168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qgo-IK-6L4"/>
-        <segue reference="3iF-iW-PVh"/>
         <segue reference="d1p-5X-bsk"/>
+        <segue reference="8Bi-u8-FOa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@
 		890165E01C84A02B00AEB70E /* oto004.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 890165DF1C84A02B00AEB70E /* oto004.mp3 */; };
 		890165E21C84AB7F00AEB70E /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890165E11C84AB7F00AEB70E /* AudioPlayer.swift */; };
 		890165E41C84B2D600AEB70E /* page.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 890165E31C84B2D600AEB70E /* page.mp3 */; };
+		890165E61C84C0DE00AEB70E /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890165E51C84C0DE00AEB70E /* TategakiTextView.swift */; };
 		890C8F4F1C798B2C0023AE5F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */; };
 		890C8F501C798B2C0023AE5F /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */; };
 		890C8F511C798B2C0023AE5F /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */; };
@@ -219,6 +220,7 @@
 		890165DF1C84A02B00AEB70E /* oto004.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oto004.mp3; sourceTree = "<group>"; };
 		890165E11C84AB7F00AEB70E /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		890165E31C84B2D600AEB70E /* page.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = page.mp3; sourceTree = "<group>"; };
+		890165E51C84C0DE00AEB70E /* TategakiTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TategakiTextView.swift; sourceTree = "<group>"; };
 		890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 				892D4F0C1C7596CC00741D83 /* ViewController.swift */,
 				890165E11C84AB7F00AEB70E /* AudioPlayer.swift */,
 				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
+				890165E51C84C0DE00AEB70E /* TategakiTextView.swift */,
 				890165DF1C84A02B00AEB70E /* oto004.mp3 */,
 				890165DD1C849FD500AEB70E /* button.mp3 */,
 				890165E31C84B2D600AEB70E /* page.mp3 */,
@@ -1016,6 +1019,7 @@
 				892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */,
 				892D4F3D1C774A3C00741D83 /* WakaListTableViewController.swift in Sources */,
 				890C907E1C7FCDCD0023AE5F /* WakaListTableViewCell.swift in Sources */,
+				890165E61C84C0DE00AEB70E /* TategakiTextView.swift in Sources */,
 				892D4F3F1C774AC800741D83 /* DetailViewController.swift in Sources */,
 				890165E21C84AB7F00AEB70E /* AudioPlayer.swift in Sources */,
 				892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */,

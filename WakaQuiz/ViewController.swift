@@ -13,6 +13,8 @@ class ViewController: UIViewController{
 
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var soundLabel: UILabel!
     var bgm : AVAudioPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,9 +53,20 @@ class ViewController: UIViewController{
         questionLabel.alpha = 1.0
     }
     
+    
+    @IBAction func soundButtonPushed(sender: AnyObject) {
+        if(soundLabel.text == "さうんど　あり"){
+            soundLabel.text = "さうんど　なし"
+            bgm?.stop()
+        }else{
+            soundLabel.text = "さうんど　あり"
+            bgm?.play()
+        }
+    }
+    
     //viewDidLoadの呼び出し（画面のインスタンスの作成）を一回で済ませる。
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
-        
+         
     }
 
 }

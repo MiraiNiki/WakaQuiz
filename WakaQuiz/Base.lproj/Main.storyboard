@@ -24,13 +24,13 @@
                                 <rect key="frame" x="0.0" y="313" width="320" height="255"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE030152_02_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iua-2w-SRp">
-                                <rect key="frame" x="0.0" y="453" width="320" height="115"/>
+                                <rect key="frame" x="0.0" y="447" width="320" height="121"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wakaIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-5X-ibN">
                                 <rect key="frame" x="23" y="28" width="275" height="256"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-Zi-nNp">
-                                <rect key="frame" x="20" y="474" width="280" height="43"/>
+                                <rect key="frame" x="20" y="473" width="280" height="43"/>
                                 <color key="backgroundColor" red="0.97111254930496216" green="0.93549627065658569" blue="0.98178321123123169" alpha="0.78125" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="百人一首一覧">
@@ -65,12 +65,29 @@
                                     <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="さうんど　あり" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aV-o7-SMt">
+                                <rect key="frame" x="200" y="542" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urn-1d-EvH">
+                                <rect key="frame" x="200" y="538" width="120" height="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.45218873023986816" green="0.11440104991197586" blue="0.082574792206287384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3n-m3-Ua1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="questionButton" destination="pEf-kV-eXf" id="ML5-hs-Qnt"/>
                         <outlet property="questionLabel" destination="IFF-0v-igE" id="gt6-wf-9Gp"/>
+                        <outlet property="soundButton" destination="urn-1d-EvH" id="c68-bd-tbi"/>
+                        <outlet property="soundLabel" destination="8aV-o7-SMt" id="Keo-H4-xKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -466,7 +483,7 @@
         <image name="wakaIcon.png" width="2168" height="2168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6pn-Xb-LXk"/>
-        <segue reference="PX0-d8-9s2"/>
+        <segue reference="d1p-5X-bsk"/>
+        <segue reference="3iF-iW-PVh"/>
     </inferredMetricsTieBreakers>
 </document>

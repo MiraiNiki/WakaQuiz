@@ -275,12 +275,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-Fi-uGs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mje-nn-Mwl">
                                 <rect key="frame" x="96" y="94" width="128" height="182"/>
                                 <color key="backgroundColor" red="0.61176472900000001" green="0.73725491759999995" blue="0.0" alpha="0.75" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-3g-btY">
                                 <rect key="frame" x="101" y="99" width="118" height="171"/>
                                 <color key="backgroundColor" red="0.99280792474746704" green="0.99568992853164673" blue="0.99221271276473999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,12 +289,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-04-843">
-                                <rect key="frame" x="107" y="110" width="107" height="152"/>
-                                <color key="backgroundColor" red="0.99276739358901978" green="0.99591666460037231" blue="0.99586433172225952" alpha="0.89329075170000005" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-B8-KL3">
                                 <rect key="frame" x="96" y="28" width="128" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="0.54502744930000002" colorSpace="calibratedWhite"/>
@@ -338,6 +333,12 @@
                                     <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="flipHorizontal" id="6pn-Xb-LXk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-WC-O8s">
+                                <rect key="frame" x="107" y="110" width="107" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -345,7 +346,7 @@
                         <outlet property="authorLabel" destination="bOp-Va-aj6" id="Qde-EO-6ch"/>
                         <outlet property="numberLabel" destination="DHF-B8-KL3" id="84D-or-rpl"/>
                         <outlet property="setsumeiTextView" destination="ETK-vW-7Zh" id="PEE-IV-iqq"/>
-                        <outlet property="wakaTextView" destination="E2B-04-843" id="FBS-qF-aGN"/>
+                        <outlet property="wakaLabel" destination="EYt-WC-O8s" id="8sN-TZ-j8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ud1-UO-ulL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,7 +484,7 @@
         <image name="wakaIcon.png" width="2168" height="2168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d1p-5X-bsk"/>
+        <segue reference="6pn-Xb-LXk"/>
         <segue reference="3iF-iW-PVh"/>
     </inferredMetricsTieBreakers>
 </document>

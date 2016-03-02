@@ -15,13 +15,15 @@ class DetailViewController: UIViewController {
 
     //@IBOutlet weak var wakaTategakiTextView: UITategakiTextView!
     //UITategakiTextView
-    @IBOutlet weak var wakaTextView: UITextView!
+    
+    @IBOutlet weak var wakaLabel: UILabel!
     
     @IBOutlet weak var numberLabel: UILabel!
     
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet weak var setsumeiTextView: UITextView!
+    
     
     let authorArray:NSArray = ["天智天皇","持統天皇","柿本人麻呂","山部赤人","猿丸大夫","中納言家持","阿部仲麿","喜撰法師","小野小町","蝉丸",
         "参議篁","僧正遍照","陽成院","河原左大臣","光孝天皇","中納言行平","在原業平朝臣","藤原敏行朝臣","伊勢","元良親王",
@@ -165,9 +167,10 @@ class DetailViewController: UIViewController {
         seDetail = mkAudioPlayer("seDetail", bgmType: "mp3")
         seDetail!.volume = 0.3
         
-        setsumeiTextView.editable = false //setsumeiTextViewを編集不可能にする。
-
-        let wakaTategakiTextView : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.wakaTextView.frame.origin.x, self.wakaTextView.frame.origin.y, self.wakaTextView.frame.width, self.wakaTextView.frame.height))
+        //<-- setsumeiTextViewを編集不可能にする -->
+        setsumeiTextView.editable = false
+                
+        let wakaTategakiTextView : UITategakiTextView = UITategakiTextView(frame: CGRectMake(self.wakaLabel.frame.origin.x, self.wakaLabel.frame.origin.y, self.wakaLabel.frame.width, self.wakaLabel.frame.height))
         wakaTategakiTextView.tategakiText(wakaArray[wakaIndex] as! String, textSize: 19)
             self.view.addSubview(wakaTategakiTextView)
         // Do any additional setup after loading the view.
@@ -176,6 +179,8 @@ class DetailViewController: UIViewController {
         authorLabel.text = authorArray[wakaIndex] as? String
         
         setsumeiTextView.text = setsumeiArray[wakaIndex] as? String
+        
+        self.view.sendSubviewToBack(wakaLabel)
     
     }
     

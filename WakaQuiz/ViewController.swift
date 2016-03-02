@@ -66,7 +66,7 @@ class ViewController: UIViewController{
     
     //viewDidLoadの呼び出し（画面のインスタンスの作成）を一回で済ませる。
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
-         
+        
     }
 
 }

@@ -180,6 +180,9 @@ class ResultViewController: UIViewController {
         setsumeiTextView.text = questionArray[questionIndex]
         //<-- setsumeiTextViewの外部からの編集を不可能にする -->
         setsumeiTextView.editable = false
+        
+        //<-- 和歌テキストを編集不可能にする -->
+        wakaTextView.editable = false
 
     }
     @IBAction func nextButtonPushed(sender: AnyObject) {

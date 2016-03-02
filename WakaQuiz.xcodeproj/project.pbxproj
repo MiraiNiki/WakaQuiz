@@ -157,7 +157,7 @@
 		890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		890C907C1C7FCDCD0023AE5F /* WakaListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakaListTableViewCell.swift; sourceTree = "<group>"; };
 		890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WakaListTableViewCell.xib; sourceTree = "<group>"; };
-		890C90801C83CE4F0023AE5F /* wakaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wakaIcon.png; sourceTree = "<group>"; };
+		890C90801C83CE4F0023AE5F /* wakaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wakaIcon.png; path = ../wakaIcon.png; sourceTree = "<group>"; };
 		890C90821C83D0DD0023AE5F /* WE030152_02_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WE030152_02_1280.jpg; path = ../WE030152_02_1280.jpg; sourceTree = "<group>"; };
 		890C90841C83D27D0023AE5F /* WE050374_03_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WE050374_03_1280.jpg; path = ../WE050374_03_1280.jpg; sourceTree = "<group>"; };
 		890C90851C83D27D0023AE5F /* WE080001_01_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WE080001_01_1280.jpg; path = ../WE080001_01_1280.jpg; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		892D4F0A1C7596CC00741D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		892D4F0C1C7596CC00741D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		892D4F0F1C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		892D4F111C7596CC00741D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		892D4F111C7596CC00741D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WakaQuiz/Assets.xcassets; sourceTree = "<group>"; };
 		892D4F141C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892D4F161C7596CC00741D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892D4F1B1C7596CC00741D83 /* WakaQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,6 +274,7 @@
 				890165E71C84C53F00AEB70E /* seDetail.mp3 */,
 			);
 			name = music;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		890165EA1C868C2F00AEB70E /* quiz */ = {
@@ -283,6 +284,7 @@
 				892D4F3A1C7749FB00741D83 /* ResultViewController.swift */,
 			);
 			name = quiz;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		890165EB1C868CB400AEB70E /* class */ = {
@@ -292,6 +294,7 @@
 				890165E11C84AB7F00AEB70E /* AudioPlayer.swift */,
 			);
 			name = class;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		890165EC1C868D2800AEB70E /* detail */ = {
@@ -303,11 +306,13 @@
 				890C907D1C7FCDCD0023AE5F /* WakaListTableViewCell.xib */,
 			);
 			name = detail;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		890165EE1C86917F00AEB70E /* AppIconResizer_201603020310_356785cf522e74724cd65f5f7d18d366 */ = {
 			isa = PBXGroup;
 			children = (
+				890C90801C83CE4F0023AE5F /* wakaIcon.png */,
 				890165EF1C86917F00AEB70E /* Icon-60@2x.png */,
 				890165F01C86917F00AEB70E /* Icon-60@3x.png */,
 				890165F11C86917F00AEB70E /* Icon-72.png */,
@@ -329,6 +334,18 @@
 			path = WakaQuiz/AppIconResizer_201603020310_356785cf522e74724cd65f5f7d18d366;
 			sourceTree = "<group>";
 		};
+		8901660F1C86959C00AEB70E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				892D4FB41C775B1F00741D83 /* haikeiImage */,
+				892D50211C78152600741D83 /* resultImage */,
+				890C8F4B1C798B2C0023AE5F /* Defaults-master */,
+				890165EE1C86917F00AEB70E /* AppIconResizer_201603020310_356785cf522e74724cd65f5f7d18d366 */,
+			);
+			name = image;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		890C8F4B1C798B2C0023AE5F /* Defaults-master */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,19 +354,15 @@
 				890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */,
 			);
 			name = "Defaults-master";
-			path = "haikeiImage/wakaImage/Defaults-master";
+			path = "WakaQuiz/haikeiImage/wakaImage/Defaults-master";
 			sourceTree = "<group>";
 		};
 		892D4EFE1C7596CC00741D83 = {
 			isa = PBXGroup;
 			children = (
-				890165EE1C86917F00AEB70E /* AppIconResizer_201603020310_356785cf522e74724cd65f5f7d18d366 */,
-				890165EB1C868CB400AEB70E /* class */,
-				890165EA1C868C2F00AEB70E /* quiz */,
-				890165EC1C868D2800AEB70E /* detail */,
-				890165E91C868BDA00AEB70E /* music */,
 				890165D11C843C5B00AEB70E /* AVFoundation.framework */,
 				892D4F091C7596CC00741D83 /* WakaQuiz */,
+				892D4F111C7596CC00741D83 /* Assets.xcassets */,
 				892D4F1E1C7596CC00741D83 /* WakaQuizTests */,
 				892D4F291C7596CC00741D83 /* WakaQuizUITests */,
 				892D4F081C7596CC00741D83 /* Products */,
@@ -372,13 +385,13 @@
 				892D4F0A1C7596CC00741D83 /* AppDelegate.swift */,
 				892D4F0C1C7596CC00741D83 /* ViewController.swift */,
 				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
-				890C90801C83CE4F0023AE5F /* wakaIcon.png */,
-				890C8F4B1C798B2C0023AE5F /* Defaults-master */,
-				892D50211C78152600741D83 /* resultImage */,
-				892D4FB41C775B1F00741D83 /* haikeiImage */,
-				892D4F111C7596CC00741D83 /* Assets.xcassets */,
 				892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */,
 				892D4F161C7596CC00741D83 /* Info.plist */,
+				890165EA1C868C2F00AEB70E /* quiz */,
+				890165EC1C868D2800AEB70E /* detail */,
+				890165EB1C868CB400AEB70E /* class */,
+				8901660F1C86959C00AEB70E /* image */,
+				890165E91C868BDA00AEB70E /* music */,
 			);
 			path = WakaQuiz;
 			sourceTree = "<group>";
@@ -459,7 +472,8 @@
 				892D4FE91C775B1F00741D83 /* 053.jpg */,
 				892D4FEA1C775B1F00741D83 /* 054.jpg */,
 			);
-			path = haikeiImage;
+			name = haikeiImage;
+			path = WakaQuiz/haikeiImage;
 			sourceTree = "<group>";
 		};
 		892D50211C78152600741D83 /* resultImage */ = {
@@ -474,7 +488,8 @@
 				892D50231C78152600741D83 /* result2.jpg */,
 				892D50241C78152600741D83 /* result3.jpg */,
 			);
-			path = resultImage;
+			name = resultImage;
+			path = WakaQuiz/resultImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

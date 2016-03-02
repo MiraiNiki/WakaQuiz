@@ -12,6 +12,7 @@ class WakaListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var wakaLabel: UILabel!
     
+    @IBOutlet weak var scoreLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class WakaListTableViewController: UITableViewController {
 //
@@ -80,7 +81,14 @@ class WakaListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! WakaListTableViewCell
         
         cell.wakaLabel.text = "\(wakaArray[indexPath.row])"
-
+        
+        let realm = try! Realm()
+        let waka = realm.objects(Waka)[indexPath.row]
+        if(waka.total != 0){
+        cell.scoreLabel.text = "\((Int)((Double)(waka.score)/(Double)(waka.total))*100)%"
+        }else{
+        cell.scoreLabel.text = "0%"
+        }
         return cell
     }
     

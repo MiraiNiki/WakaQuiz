@@ -8,6 +8,21 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
+
+
+public class Waka: Object {
+    dynamic var id = 0
+    dynamic var score = 0
+    dynamic var total = 0
+    dynamic var name = ""
+    
+    //primaryKeyの設定
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
+    
+}
 
 class ViewController: UIViewController{
 
@@ -15,7 +30,19 @@ class ViewController: UIViewController{
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundLabel: UILabel!
+
+    
+    //score配列を初期化
+    var score: [Int] = [Int](count: 100, repeatedValue: 0)
+    //
+    let realm = try? Realm()
+
+    
+    
+    //<-- viewDidLoadは一回だけ呼ばれる。 -->
+    
     var bgm : AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,9 +50,26 @@ class ViewController: UIViewController{
         bgm!.volume = 0.3
         bgm!.numberOfLoops = -1
         bgm!.play()
+        
+        
+        for i in 1...100 {
+        
+        let waka = Waka()
+        waka.id = i // iに依存
+        waka.score = 0
+        waka.total = 0
+        
+            
+        try? realm!.write {
+            realm!.add(waka,update: true)
+        }
+
+        }
+        
+        
     }
     
-    //<-- viewDidLoadは一回だけ呼ばれる。 -->
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let subLabel : UILabel = UILabel(frame: CGRectMake(self.questionLabel.frame.origin.x, self.questionLabel.frame.origin.y, self.questionLabel.frame.width, self.questionLabel.frame.height))
@@ -63,6 +107,8 @@ class ViewController: UIViewController{
             bgm?.play()
         }
     }
+    
+    
     
     //viewDidLoadの呼び出し（画面のインスタンスの作成）を一回で済ませる。
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {

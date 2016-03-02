@@ -30,6 +30,8 @@
 		8901660C1C86917F00AEB70E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890165FC1C86917F00AEB70E /* Icon@2x.png */; };
 		8901660D1C86917F00AEB70E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 890165FD1C86917F00AEB70E /* iTunesArtwork */; };
 		8901660E1C86917F00AEB70E /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 890165FE1C86917F00AEB70E /* iTunesArtwork@2x */; };
+		890166111C86BA2A00AEB70E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890166101C86BA2A00AEB70E /* Realm.framework */; };
+		890166131C86BA2E00AEB70E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890166121C86BA2E00AEB70E /* RealmSwift.framework */; };
 		890C8F4F1C798B2C0023AE5F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */; };
 		890C8F501C798B2C0023AE5F /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */; };
 		890C8F511C798B2C0023AE5F /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */; };
@@ -109,6 +111,7 @@
 		892D50251C78152600741D83 /* result1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50221C78152600741D83 /* result1.jpg */; };
 		892D50261C78152600741D83 /* result2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50231C78152600741D83 /* result2.jpg */; };
 		892D50271C78152600741D83 /* result3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50241C78152600741D83 /* result3.jpg */; };
+		A8E7B94E1EE5F038B05D1A14 /* Pods_WakaQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDA20B508078B8E2FCA86B5 /* Pods_WakaQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16EC52E2892AB746306C7EA5 /* Pods-WakaQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakaQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-WakaQuiz/Pods-WakaQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		750B0834AF6C1AC26C7DE69B /* Pods-WakaQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakaQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WakaQuiz/Pods-WakaQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		890165D11C843C5B00AEB70E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		890165DD1C849FD500AEB70E /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = button.mp3; path = WakaQuiz/button.mp3; sourceTree = "<group>"; };
 		890165DF1C84A02B00AEB70E /* oto004.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oto004.mp3; path = WakaQuiz/oto004.mp3; sourceTree = "<group>"; };
@@ -152,6 +157,8 @@
 		890165FC1C86917F00AEB70E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		890165FD1C86917F00AEB70E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		890165FE1C86917F00AEB70E /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		890166101C86BA2A00AEB70E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Release-iphoneos/Realm.framework"; sourceTree = "<group>"; };
+		890166121C86BA2E00AEB70E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 		890C8F4C1C798B2C0023AE5F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		890C8F4D1C798B2C0023AE5F /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		890C8F4E1C798B2C0023AE5F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -237,6 +244,7 @@
 		892D50221C78152600741D83 /* result1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result1.jpg; sourceTree = "<group>"; };
 		892D50231C78152600741D83 /* result2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result2.jpg; sourceTree = "<group>"; };
 		892D50241C78152600741D83 /* result3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result3.jpg; sourceTree = "<group>"; };
+		ABDA20B508078B8E2FCA86B5 /* Pods_WakaQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakaQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +252,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890166131C86BA2E00AEB70E /* RealmSwift.framework in Frameworks */,
+				890166111C86BA2A00AEB70E /* Realm.framework in Frameworks */,
 				890165D21C843C5B00AEB70E /* AVFoundation.framework in Frameworks */,
+				A8E7B94E1EE5F038B05D1A14 /* Pods_WakaQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +276,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAD33BD2E691289E2BE4A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				750B0834AF6C1AC26C7DE69B /* Pods-WakaQuiz.debug.xcconfig */,
+				16EC52E2892AB746306C7EA5 /* Pods-WakaQuiz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		518CC4B9A5B67DD0F90E0D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				890166121C86BA2E00AEB70E /* RealmSwift.framework */,
+				890166101C86BA2A00AEB70E /* Realm.framework */,
+				ABDA20B508078B8E2FCA86B5 /* Pods_WakaQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		890165E91C868BDA00AEB70E /* music */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +396,8 @@
 				892D4F1E1C7596CC00741D83 /* WakaQuizTests */,
 				892D4F291C7596CC00741D83 /* WakaQuizUITests */,
 				892D4F081C7596CC00741D83 /* Products */,
+				0CAD33BD2E691289E2BE4A20 /* Pods */,
+				518CC4B9A5B67DD0F90E0D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -499,9 +531,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 892D4F2F1C7596CC00741D83 /* Build configuration list for PBXNativeTarget "WakaQuiz" */;
 			buildPhases = (
+				8F645D7CCB09BE32E110BCAF /* Check Pods Manifest.lock */,
 				892D4F031C7596CC00741D83 /* Sources */,
 				892D4F041C7596CC00741D83 /* Frameworks */,
 				892D4F051C7596CC00741D83 /* Resources */,
+				0FBEE5EF1347D7ECD2A80DCA /* Embed Pods Frameworks */,
+				F9AAAEB3B1DE8758ADCAC90F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -705,6 +740,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FBEE5EF1347D7ECD2A80DCA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakaQuiz/Pods-WakaQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F645D7CCB09BE32E110BCAF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AAAEB3B1DE8758ADCAC90F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakaQuiz/Pods-WakaQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		892D4F031C7596CC00741D83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -856,8 +939,14 @@
 		};
 		892D4F301C7596CC00741D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750B0834AF6C1AC26C7DE69B /* Pods-WakaQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = WakaQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuiz;
@@ -867,8 +956,14 @@
 		};
 		892D4F311C7596CC00741D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16EC52E2892AB746306C7EA5 /* Pods-WakaQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = WakaQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Self.WakaQuiz;

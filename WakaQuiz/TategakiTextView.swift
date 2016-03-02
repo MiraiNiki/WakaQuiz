@@ -37,7 +37,7 @@ public class UITategakiTextView: UITextView {
                 let _y = startY + (rowCnt * textSize);
                 self.makeLabel(String(a),x:_x,y:_y,s: textSize);
                 rowCnt += 1;
-                print(String(a));
+
             }
             
         }

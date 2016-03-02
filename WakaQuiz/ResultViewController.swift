@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class ResultViewController: UIViewController {
 
@@ -153,11 +154,25 @@ class ResultViewController: UIViewController {
         "荒れ果ててしまった御所の古い軒下に生えるしのぶ草の葉を見るにつけて、昔の御所の華やかさがしみじみと偲ばれて偲んでも偲んでも偲びきれない。昔の天皇を中心に平和に治められていたこの時代のことは。\n"
     ]
 
+    // seのインスタンス
     var sePage : AVAudioPlayer?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let realm = try! Realm()
+        let waka = realm.objects(Waka)[questionIndex]
+        try! realm.write {
+            waka.total = waka.total + 1
+            
+            if(ifAnswer == true){
+              waka.score = waka.score + 1
+            }
+            
+        }
+        
         //<-- 効果音の設定 -->
         sePage = mkAudioPlayer("page", bgmType: "mp3")
         sePage!.volume = 0.3

@@ -481,7 +481,7 @@
         <image name="WE080001_01_1280.jpg" width="1280" height="1280"/>
         <image name="result1.jpg" width="1280" height="1280"/>
         <image name="result3.jpg" width="1280" height="1280"/>
-        <image name="wakaIcon.png" width="2168" height="2168"/>
+        <image name="wakaIcon.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6pn-Xb-LXk"/>

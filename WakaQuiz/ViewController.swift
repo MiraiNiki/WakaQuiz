@@ -55,10 +55,17 @@ class ViewController: UIViewController{
         for i in 1...100 {
         
         let waka = Waka()
-        waka.id = i // iに依存
-        waka.score = 0
-        waka.total = 0
+        let orgWaka = realm!.objects(Waka)[i-1]
         
+            if(orgWaka.score != 0 || orgWaka != 0){
+                waka.score = orgWaka.score
+                waka.total = orgWaka.total
+            }else{
+
+                waka.id = i // iに依存
+                waka.score = 0
+                waka.total = 0
+            }
             
         try? realm!.write {
             realm!.add(waka,update: true)

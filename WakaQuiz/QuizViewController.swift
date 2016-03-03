@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class QuizViewController: UIViewController,AVAudioPlayerDelegate {
 
@@ -241,8 +242,15 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         
         
         //<------------   問題をランダムに設定   ------------->
-        //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
         questionRnd = Int(arc4random_uniform(100))
+        let realm = try! Realm()
+        let waka = realm.objects(Waka)[questionRnd]
+        if(waka.total != 0){
+            if((Double)(waka.score)/(Double)(waka.total) == 1){
+                questionRnd = Int(arc4random_uniform(100))
+            }
+        
+        }
         rndQuestion()
         
         
@@ -251,7 +259,7 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
 
         
         //<-------- ダミーの答えのインデックス  ------>
-        //とりあえず10個の配列でやってみる。あとで変更の必要が有る。!!注意!!
+        
             dummyAnswerRnd1 = Int(arc4random_uniform(100))
             //正解を一つにする。
             while(dummyAnswerRnd1 == questionRnd){

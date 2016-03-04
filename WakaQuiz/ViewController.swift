@@ -25,18 +25,18 @@ public class Waka: Object {
 }
 
 class ViewController: UIViewController{
-
+    
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundLabel: UILabel!
-
+    
     
     //score配列を初期化
     var score: [Int] = [Int](count: 100, repeatedValue: 0)
     //
     let realm = try? Realm()
-
+    
     
     
     //<-- viewDidLoadは一回だけ呼ばれる。 -->
@@ -51,32 +51,54 @@ class ViewController: UIViewController{
         bgm!.numberOfLoops = -1
         bgm!.play()
         
-        
-        for i in 1...100 {
-        
-        let waka = Waka()
-        let orgWaka = realm!.objects(Waka)[i-1]
-        
-            if(orgWaka.score != 0 || orgWaka != 0){
-                waka.score = orgWaka.score
-                waka.total = orgWaka.total
-            }else{
 
+        
+        let udFlag = NSUserDefaults.standardUserDefaults()
+        
+        
+        
+        var udId: String! = udFlag.objectForKey("id") as! String!
+        
+        if(udId != nil){
+            
+            for i in 1...100 {
+                let waka = Waka()
+                let orgWaka = realm!.objects(Waka)[i]
+                
+                if(orgWaka.score != 0 || orgWaka != 0){
+                    waka.score = orgWaka.score
+                    waka.total = orgWaka.total
+                }else{
+                    waka.id = i // iに依存
+                    waka.score = 0
+                    waka.total = 0
+                }
+                
+                try? realm!.write {
+                    realm!.add(waka,update: true)
+                }
+                
+            }
+        }else{
+            for i in 1...100 {
+                let waka = Waka()
                 waka.id = i // iに依存
                 waka.score = 0
                 waka.total = 0
-            }
             
-        try? realm!.write {
-            realm!.add(waka,update: true)
-        }
-
+            try? realm!.write {
+                realm!.add(waka,update: true)
+            }
+            }
         }
         
+        
+        
+        udFlag.setObject("notNil", forKey: "id")
         
     }
     
-
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let subLabel : UILabel = UILabel(frame: CGRectMake(self.questionLabel.frame.origin.x, self.questionLabel.frame.origin.y, self.questionLabel.frame.width, self.questionLabel.frame.height))
@@ -90,12 +112,12 @@ class ViewController: UIViewController{
             subLabel.alpha = 0.0
             }, completion: nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func questionButtonPushed(sender: AnyObject) {
         questionLabel.alpha = 1.0
     }
@@ -121,6 +143,6 @@ class ViewController: UIViewController{
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
         
     }
-
+    
 }
 

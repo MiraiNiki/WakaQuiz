@@ -20,9 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE080001_01_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-IG-LoQ">
                                 <rect key="frame" x="-88" y="-69" width="527" height="508"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE020340_03_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-c8-mpk">
-                                <rect key="frame" x="0.0" y="313" width="320" height="255"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE030152_02_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iua-2w-SRp">
                                 <rect key="frame" x="0.0" y="447" width="320" height="121"/>
                             </imageView>
@@ -80,9 +77,13 @@
                                     <action selector="soundButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3n-m3-Ua1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WE020340_03_1280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-c8-mpk">
+                                <rect key="frame" x="0.0" y="313" width="320" height="255"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="questionButton" destination="pEf-kV-eXf" id="ML5-hs-Qnt"/>
                         <outlet property="questionLabel" destination="IFF-0v-igE" id="gt6-wf-9Gp"/>
@@ -197,6 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="answerButton1" destination="r1o-hd-N1k" id="t7D-Xa-oSH"/>
                         <outlet property="answerButton2" destination="shf-EM-IG5" id="ZEp-ki-qr9"/>
@@ -244,6 +246,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="9X1-Qs-Q19" kind="modal" identifier="toDetailViewController" modalTransitionStyle="flipHorizontal" id="nN6-rs-c7E"/>
                     </connections>
@@ -342,6 +345,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="authorLabel" destination="bOp-Va-aj6" id="Qde-EO-6ch"/>
                         <outlet property="numberLabel" destination="DHF-B8-KL3" id="84D-or-rpl"/>
@@ -442,6 +446,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qy3-p2-kAt"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="authorLabel" destination="fwJ-LB-TGz" id="sRD-hN-DBN"/>
                         <outlet property="haikeiLabel" destination="rwc-ef-SPH" id="8sC-kO-fsn"/>
@@ -460,6 +465,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MmG-Dh-nsT" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LUz-Km-xFL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -484,7 +490,7 @@
         <image name="wakaIcon.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6pn-Xb-LXk"/>
+        <segue reference="d1p-5X-bsk"/>
         <segue reference="3iF-iW-PVh"/>
     </inferredMetricsTieBreakers>
 </document>

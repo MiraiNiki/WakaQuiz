@@ -47,7 +47,6 @@
 		892D4F0D1C7596CC00741D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F0C1C7596CC00741D83 /* ViewController.swift */; };
 		892D4F101C7596CC00741D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F0E1C7596CC00741D83 /* Main.storyboard */; };
 		892D4F121C7596CC00741D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F111C7596CC00741D83 /* Assets.xcassets */; };
-		892D4F151C7596CC00741D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */; };
 		892D4F201C7596CC00741D83 /* WakaQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F1F1C7596CC00741D83 /* WakaQuizTests.swift */; };
 		892D4F2B1C7596CC00741D83 /* WakaQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F2A1C7596CC00741D83 /* WakaQuizUITests.swift */; };
 		892D4F391C7749B900741D83 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D4F381C7749B900741D83 /* QuizViewController.swift */; };
@@ -111,6 +110,8 @@
 		892D50251C78152600741D83 /* result1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50221C78152600741D83 /* result1.jpg */; };
 		892D50261C78152600741D83 /* result2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50231C78152600741D83 /* result2.jpg */; };
 		892D50271C78152600741D83 /* result3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 892D50241C78152600741D83 /* result3.jpg */; };
+		89AAE5EA1C8F8CF400CF9968 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAE5E91C8F8CF400CF9968 /* StoryboardHelper.swift */; };
+		89AAE5EC1C8F8E3500CF9968 /* 3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AAE5EB1C8F8E3500CF9968 /* 3.5inch.storyboard */; };
 		A8E7B94E1EE5F038B05D1A14 /* Pods_WakaQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDA20B508078B8E2FCA86B5 /* Pods_WakaQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -175,7 +176,6 @@
 		892D4F0C1C7596CC00741D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		892D4F0F1C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		892D4F111C7596CC00741D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WakaQuiz/Assets.xcassets; sourceTree = "<group>"; };
-		892D4F141C7596CC00741D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892D4F161C7596CC00741D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892D4F1B1C7596CC00741D83 /* WakaQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		892D4F1F1C7596CC00741D83 /* WakaQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaQuizTests.swift; sourceTree = "<group>"; };
@@ -244,6 +244,8 @@
 		892D50221C78152600741D83 /* result1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result1.jpg; sourceTree = "<group>"; };
 		892D50231C78152600741D83 /* result2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result2.jpg; sourceTree = "<group>"; };
 		892D50241C78152600741D83 /* result3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result3.jpg; sourceTree = "<group>"; };
+		89AAE5E91C8F8CF400CF9968 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		89AAE5EB1C8F8E3500CF9968 /* 3.5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inch.storyboard; sourceTree = "<group>"; };
 		ABDA20B508078B8E2FCA86B5 /* Pods_WakaQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakaQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -416,8 +418,9 @@
 			children = (
 				892D4F0A1C7596CC00741D83 /* AppDelegate.swift */,
 				892D4F0C1C7596CC00741D83 /* ViewController.swift */,
+				89AAE5EB1C8F8E3500CF9968 /* 3.5inch.storyboard */,
+				89AAE5E91C8F8CF400CF9968 /* StoryboardHelper.swift */,
 				892D4F0E1C7596CC00741D83 /* Main.storyboard */,
-				892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */,
 				892D4F161C7596CC00741D83 /* Info.plist */,
 				890165EA1C868C2F00AEB70E /* quiz */,
 				890165EC1C868D2800AEB70E /* detail */,
@@ -648,7 +651,6 @@
 				890C90861C83D27D0023AE5F /* WE050374_03_1280.jpg in Resources */,
 				892D50091C775B1F00741D83 /* 031.jpg in Resources */,
 				892D500D1C775B1F00741D83 /* 035.jpg in Resources */,
-				892D4F151C7596CC00741D83 /* LaunchScreen.storyboard in Resources */,
 				892D50001C775B1F00741D83 /* 022.jpg in Resources */,
 				892D501A1C775B1F00741D83 /* 048.jpg in Resources */,
 				892D50141C775B1F00741D83 /* 042.jpg in Resources */,
@@ -665,6 +667,7 @@
 				892D50031C775B1F00741D83 /* 025.jpg in Resources */,
 				890166081C86917F00AEB70E /* Icon-Small-50@2x.png in Resources */,
 				890C90871C83D27D0023AE5F /* WE080001_01_1280.jpg in Resources */,
+				89AAE5EC1C8F8E3500CF9968 /* 3.5inch.storyboard in Resources */,
 				892D50171C775B1F00741D83 /* 045.jpg in Resources */,
 				892D4FF31C775B1F00741D83 /* 009.jpg in Resources */,
 				892D4FF41C775B1F00741D83 /* 010.jpg in Resources */,
@@ -801,6 +804,7 @@
 				892D4F3F1C774AC800741D83 /* DetailViewController.swift in Sources */,
 				890165E21C84AB7F00AEB70E /* AudioPlayer.swift in Sources */,
 				892D4F0B1C7596CC00741D83 /* AppDelegate.swift in Sources */,
+				89AAE5EA1C8F8CF400CF9968 /* StoryboardHelper.swift in Sources */,
 				892D4F3B1C7749FB00741D83 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,14 +847,6 @@
 				892D4F0F1C7596CC00741D83 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		892D4F131C7596CC00741D83 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				892D4F141C7596CC00741D83 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

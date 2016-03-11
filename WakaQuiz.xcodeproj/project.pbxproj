@@ -947,6 +947,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
 			};
 			name = Debug;
 		};
@@ -965,6 +966,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
 			};
 			name = Release;
 		};

@@ -777,7 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91564EFB8A0344334E0127F7644337B6 /* Pods-WakaQuiz.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -599,6 +599,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					809FCCDF5F64E81046014B0DF3D19030 = {
+						DevelopmentTeam = QEX6ZN4B66;
+					};
+					986E6A32AA11D245D939713DF2245DA4 = {
+						DevelopmentTeam = QEX6ZN4B66;
+					};
+					DDDDC15D200C6E3108521CB704B9AA52 = {
+						DevelopmentTeam = QEX6ZN4B66;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -723,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C31BE758C7D12EE582042B3D7D7DBDE9 /* Realm.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -737,9 +749,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz.Realm;
 				PRODUCT_NAME = Realm;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD959700274B985EFB03DD5EC0E5752F /* RealmSwift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -766,9 +779,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz.RealmSwift;
 				PRODUCT_NAME = RealmSwift;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -781,7 +794,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91564EFB8A0344334E0127F7644337B6 /* Pods-WakaQuiz.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -800,7 +814,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
 				PRODUCT_NAME = Pods_WakaQuiz;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -813,6 +827,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD959700274B985EFB03DD5EC0E5752F /* RealmSwift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -827,9 +842,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz.RealmSwift;
 				PRODUCT_NAME = RealmSwift;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -843,6 +858,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 752FB88FC1648C55900FF9FC7F4C0646 /* Pods-WakaQuiz.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -862,7 +878,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
 				PRODUCT_NAME = Pods_WakaQuiz;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -906,6 +922,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -939,6 +956,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
@@ -949,6 +967,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C31BE758C7D12EE582042B3D7D7DBDE9 /* Realm.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -963,9 +982,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = tsukuba.coins.future.WakaQuiz.Realm;
 				PRODUCT_NAME = Realm;
-				PROVISIONING_PROFILE = "c55eba2e-265b-4f2b-916a-53041b70d5b2";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import RealmSwift
+import GoogleMobileAds
 
 
 public class Waka: Object {
@@ -24,12 +25,18 @@ public class Waka: Object {
     
 }
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, GADBannerViewDelegate{
     
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundLabel: UILabel!
+    
+    //AdMob ID
+    let AdMobID = "ca-app-pub-3231060788085133/9160394406"
+    let TEST_DEVICE_ID = "61b0154xxxxxxxxxxxxxxxxxxxxxxxe0"
+    let AdMobTest:Bool = true
+    let SimulatorTest:Bool = true
     
     
     //score配列を初期化
@@ -51,7 +58,31 @@ class ViewController: UIViewController{
         bgm!.numberOfLoops = -1
         bgm!.play()
         
-
+        
+        var admobView: GADBannerView = GADBannerView()
+        admobView = GADBannerView(adSize:kGADAdSizeBanner)
+        admobView.frame.origin = CGPointMake(0, self.view.frame.size.height - admobView.frame.height)
+        
+        admobView.frame.size = CGSizeMake(self.view.frame.width, admobView.frame.height)
+        admobView.adUnitID = AdMobID
+        admobView.delegate = self
+        admobView.rootViewController = self
+        
+        let admobRequest:GADRequest = GADRequest()
+        
+        if AdMobTest {
+            if SimulatorTest {
+                admobRequest.testDevices = [kGADSimulatorID]
+            }
+            else {
+                admobRequest.testDevices = [TEST_DEVICE_ID]
+            }
+            
+        }
+        
+        admobView.loadRequest(admobRequest)
+        
+        self.view.addSubview(admobView)
         
         let udFlag = NSUserDefaults.standardUserDefaults()
         

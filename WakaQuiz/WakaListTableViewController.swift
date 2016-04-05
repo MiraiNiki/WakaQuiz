@@ -15,6 +15,8 @@ class WakaListTableViewController: UITableViewController {
 //    @IBOutlet weak var wakaTable: UILabel!
     
     var wakaIndex: Int = 0
+    var ifSound: Bool = true
+    var udFlag = NSUserDefaults.standardUserDefaults()
 
     let wakaArray:NSArray = [" 1. 秋の田のかりほの庵の苫をあらみ\n 　わが衣手は露にぬれつつ"," 2. 春過ぎて夏来にけらし白妙の\n 　衣干すてふ天の香具山"," 3. あしびきの山鳥の尾のしだり尾の\n　 ながながし夜をひとりかも寝む"," 4. 田子の浦にうち出でて見れば白妙の\n 　富士の高嶺に雪は降りつつ"," 5. 奥山に紅葉踏み分け鳴く鹿の\n 　声聞く時ぞ秋は悲しき ",
         " 6. 鵲の渡せる橋に置く霜の\n　 白きを見れば夜ぞ更けにける "," 7. 天の原ふりさけ見れば春日なる\n　 三笠の山に出でし月かも"," 8. わが庵は都の辰巳しかぞ住む\n 　世をうぢ山と人はいふなり"," 9. 花の色は移りにけりないたづらに\n 　わが身世にふるながめせしまに"," 10. これやこの行くも帰るも別れては\n　　知るも知らぬもあふ坂の関",
@@ -48,6 +50,15 @@ class WakaListTableViewController: UITableViewController {
         seDetail!.volume = 0.3
         
         tableView.registerNib(UINib(nibName: "WakaListTableViewCell",bundle:nil), forCellReuseIdentifier: "cell")
+        
+        var soundId: String! = udFlag.objectForKey("ifSound") as! String!
+
+        
+        if(soundId == "true"){
+            ifSound = true
+        }else if(soundId == "false"){
+            ifSound = false
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -94,7 +105,9 @@ class WakaListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         wakaIndex = indexPath.row
+        if(ifSound == true){
         seDetail?.play()
+        }
         performSegueWithIdentifier("toDetailViewController", sender: nil)
     }
     
@@ -102,6 +115,7 @@ class WakaListTableViewController: UITableViewController {
         if(segue.identifier == "toDetailViewController"){
             let wakaVC: DetailViewController = (segue.destinationViewController as! DetailViewController)
             wakaVC.wakaIndex = wakaIndex
+            wakaVC.ifSound = self.ifSound
         }
     }
     

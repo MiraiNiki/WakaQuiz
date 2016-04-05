@@ -19,6 +19,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var setsumeiTextView: UITextView!
     var ifAnswer: Bool = false
     var questionIndex: Int = 0
+    var ifSound: Bool = true
     
     let wakaArray:NSArray = ["秋の田の\nかりほの庵の\n苫をあらみ\nわが衣手は\n露にぬれつつ","春過ぎて\n夏来にけらし\n白妙の\n衣干すてふ\n天の香具山","あしびきの\n山鳥の尾の\nしだり尾の\nながながし夜を\nひとりかも寝む","田子の浦に\nうち出でて見れば\n白妙の\n富士の高嶺に\n雪は降りつつ\n","奥山に\n紅葉踏み分け\n鳴く鹿の\n声聞く時ぞ\n秋は悲しき",
         "鵲の\n渡せる橋に\n置く霜の\n白きを見れば\n夜ぞ更けにける ","天の原\nふりさけ見れば\n春日なる\n三笠の山に\n出でし月かも","わが庵は\n都の辰巳\nしかぞ住む\n世をうぢ山と\n人はいふなり","花の色は\n移りにけりな\nいたづらに\nわが身世にふる\nながめせしまに","これやこの\n行くも帰るも\n別れては\n知るも知らぬも\nあふ坂の関",
@@ -201,7 +202,9 @@ class ResultViewController: UIViewController {
 
     }
     @IBAction func nextButtonPushed(sender: AnyObject) {
+        if(ifSound == true){
         sePage?.play()
+        }
     }
 
     
@@ -211,6 +214,13 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "returnQuizViewController") {
+            let resultView = segue.destinationViewController as! QuizViewController
+            resultView.ifSound = self.ifSound
+        }
+
+    }
 
     /*
     // MARK: - Navigation

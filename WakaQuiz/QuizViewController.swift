@@ -30,6 +30,8 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
     
     var ifAnswer:Bool = false //正解の数を記憶
     
+    var ifSound:Bool = true
+    
     //背景の画像をランダム表示
     var haikeiImgArray:[UIImage] = [
         UIImage(named: "001.jpg")!,
@@ -326,7 +328,9 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 0){
             ifAnswer = true
         }
+        if(ifSound == true){
         sePage?.play()
+        }
         performSegueToResult()
     }
 
@@ -334,7 +338,9 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 1){
             ifAnswer = true
         }
+        if(ifSound == true){
         sePage?.play()
+        }
         performSegueToResult()
     }
     
@@ -342,7 +348,9 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
         if(selectAnswerRnd == 2){
             ifAnswer = true
         }
+        if(ifSound == true){
         sePage?.play()
+        }
         performSegueToResult()
     }
     
@@ -366,6 +374,7 @@ class QuizViewController: UIViewController,AVAudioPlayerDelegate {
             let resultView = segue.destinationViewController as! ResultViewController
             resultView.ifAnswer = self.ifAnswer
             resultView.questionIndex = self.questionRnd
+            resultView.ifSound = self.ifSound
         }
     }
     

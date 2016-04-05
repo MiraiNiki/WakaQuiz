@@ -57,7 +57,7 @@
                                 </state>
                                 <connections>
                                     <action selector="questionButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zs-Tg-aMV"/>
-                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
+                                    <segue destination="vPQ-Um-e2P" kind="modal" identifier="toQuizViewController" modalTransitionStyle="crossDissolve" id="3iF-iW-PVh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-Zi-nNp">
@@ -69,7 +69,7 @@
                                 </state>
                                 <connections>
                                     <action selector="detailButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbw-ya-mGd"/>
-                                    <segue destination="MmG-Dh-nsT" kind="modal" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
+                                    <segue destination="MmG-Dh-nsT" kind="modal" identifier="toNavigationController" modalTransitionStyle="crossDissolve" id="d1p-5X-bsk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urn-1d-EvH">
@@ -440,7 +440,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPushed:" destination="r1b-MA-9Xi" eventType="touchUpInside" id="LGb-gQ-J5I"/>
-                                    <segue destination="vPQ-Um-e2P" kind="modal" modalTransitionStyle="partialCurl" id="PX0-d8-9s2"/>
+                                    <segue destination="vPQ-Um-e2P" kind="modal" identifier="returnQuizViewController" modalTransitionStyle="partialCurl" id="PX0-d8-9s2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -491,7 +491,7 @@
         <image name="wakaIcon.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="PX0-d8-9s2"/>
         <segue reference="d1p-5X-bsk"/>
-        <segue reference="3iF-iW-PVh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,12 +25,16 @@ public class Waka: Object {
     
 }
 
+
 class ViewController: UIViewController, GADBannerViewDelegate{
     
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundLabel: UILabel!
+    
+    var ifSound:Bool = true
+
     
     //AdMob ID
     let AdMobID = "ca-app-pub-3231060788085133/9160394406"
@@ -43,6 +47,8 @@ class ViewController: UIViewController, GADBannerViewDelegate{
     var score: [Int] = [Int](count: 100, repeatedValue: 0)
     //
     let realm = try? Realm()
+    
+     let udFlag = NSUserDefaults.standardUserDefaults()
     
     
     
@@ -84,9 +90,11 @@ class ViewController: UIViewController, GADBannerViewDelegate{
         
         self.view.addSubview(admobView)
         
-        let udFlag = NSUserDefaults.standardUserDefaults()
+        //let udFlag = NSUserDefaults.standardUserDefaults()
         
+        udFlag.setObject("true", forKey: "ifSound")
         
+        var soundId: String! = udFlag.objectForKey("ifSound") as! String!
         
         var udId: String! = udFlag.objectForKey("id") as! String!
         
@@ -162,12 +170,31 @@ class ViewController: UIViewController, GADBannerViewDelegate{
         if(soundLabel.text == "さうんど　あり"){
             soundLabel.text = "さうんど　なし"
             bgm?.stop()
+            ifSound = false
+            udFlag.removeObjectForKey("ifSound")
+            udFlag.setObject("false", forKey: "ifSound")
         }else{
             soundLabel.text = "さうんど　あり"
             bgm?.play()
+            ifSound = true
+            udFlag.removeObjectForKey("ifSound")
+            udFlag.setObject("true", forKey: "ifSound")
         }
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "toQuizViewController") {
+            let quizView = segue.destinationViewController as! QuizViewController
+            quizView.ifSound = self.ifSound
+        }
+
+//        if (segue.identifier == "toNavigationController") {
+//            let naviView = segue.destinationViewController as! NavigationController
+//            let wakaView = naviView.visibleViewController
+//            wakaView.ifSound = self.ifSound
+//        }
+        
+    }
     
     
     //viewDidLoadの呼び出し（画面のインスタンスの作成）を一回で済ませる。

@@ -12,6 +12,7 @@ import AVFoundation
 class DetailViewController: UIViewController {
 
     var wakaIndex : Int = 0
+    var ifSound: Bool = true
 
     //@IBOutlet weak var wakaTategakiTextView: UITategakiTextView!
     //UITategakiTextView
@@ -185,7 +186,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func backTableButtonPushed(sender: AnyObject) {
+        if(ifSound == true){
         seDetail?.play()
+        }
     }
 
     override func didReceiveMemoryWarning() {
